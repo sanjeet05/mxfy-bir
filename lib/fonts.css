@@ -1,0 +1,46 @@
+
+/* IBMPlexSans light */
+@font-face {
+	font-family: "IBMPlexSans";
+	src: url("./IBM_Plex_Sans/IBMPlexSans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* default */
+/* IBMPlexSans regular */
+@font-face {
+	font-family: "IBMPlexSans";
+	src: url("./IBM_Plex_Sans/IBMPlexSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* IBMPlexSans medium */
+@font-face {
+	font-family: "IBMPlexSans";
+	src: url("./IBM_Plex_Sans/IBMPlexSans-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* IBMPlexSans semibold */
+@font-face {
+	font-family: "IBMPlexSans";
+	src: url("./IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* IBMPlexSans bold */
+@font-face {
+	font-family: "IBMPlexSans";
+	src: url("./IBM_Plex_Sans/IBMPlexSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

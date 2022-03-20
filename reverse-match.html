@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-4.6.1-scoped/bootstrap.min.css"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/reverse-match.css" />
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<title>Maxify Digital - Reverse Match</title>
+	</head>
+	<body>
+		<div class="templete_layout bs-scoped">
+			<!-- left panel -->
+			<div class="templete_layout_item templete_layout_item_left">
+				<div class="d-flex flex-column w-100">
+					<div class="d-flex justify-content-center">
+						<img src="images/logo.png" class="logo" alt="logo" />
+					</div>
+					<div class="d-flex justify-content-center">
+						<ul class="left_menu">
+							<li>
+								<a href="/seat-distribution.html" class="text_decoration_none">
+									<div>
+										<img src="images/distribution.svg" alt="" />
+									</div>
+									<p>Seat Distribution</p>
+								</a>
+							</li>
+							<li>
+								<a href="/find-match.html" class="text_decoration_none">
+									<div>
+										<img src="images/match.svg" alt="" />
+									</div>
+									<p>Find Match</p>
+								</a>
+							</li>
+							<li class="active_menu">
+								<a href="#" class="text_decoration_none">
+									<div>
+										<img src="images/match.svg" alt="" />
+									</div>
+									<p>Reverse Match</p>
+								</a>
+							</li>
+							<li>
+								<a href="/transition.html" class="text_decoration_none">
+									<div>
+										<img src="images/transition.svg" alt="" />
+									</div>
+									<p>Transition Dashboard</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d-flex align-items-end h-100">
+						<div class="left_bottom">
+							<img src="images/avatar.png" class="left_bottom_avatar" alt="" />
+							<img
+								src="images/arrow_drop_down.svg"
+								class="left_bottom_arrow"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- left panel end -->
+
+			<!-- main container -->
+			<div class="templete_layout_item templete_layout_item_content">
+				<div class="main_container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="heading_h2">Reverse Match</h2>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-md-4">
+							<label class="select_label">Business Group</label>
+							<div class="select_wrapper">
+								<div class="select_container">
+									<div class="select__trigger">
+										<span>Select Business Group</span>
+									</div>
+									<ul
+										class="select_custom_options"
+										onclick="handleChangeBusinessGroup(event)"
+									>
+										<li class="select_custom_option" data-value="Purdue">
+											Purdue
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="select_label">Centre</label>
+							<div class="select_wrapper">
+								<div class="select_container">
+									<div class="select__trigger">
+										<span>Select Centre</span>
+									</div>
+									<ul
+										class="select_custom_options"
+										onclick="handleChangeBusinessGroup(event)"
+									>
+										<li
+											class="select_custom_option"
+											data-value="Day Early Learning at Eastern Star Church"
+										>
+											Day Early Learning at Eastern Star Church
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<label class="select_label">Classroom</label>
+							<div class="select_wrapper">
+								<div class="select_container">
+									<div class="select__trigger">
+										<span>Select Classroom</span>
+									</div>
+									<ul
+										class="select_custom_options"
+										onclick="handleChangeBusinessGroup(event)"
+									>
+										<li
+											class="select_custom_option"
+											data-value="Dreamers - 0.0 Infants - RM-3601"
+										>
+											Dreamers - 0.0 Infants - RM-3601
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main_body">
+						<div id="emptyList" class="h-100">
+							<div
+								class="d-flex align-items-center justify-content-center h-100"
+							>
+								<div class="empty_list">
+									<img src="images/empty_state.png" alt="" />
+									<p>You haven't selected anything yet.</p>
+								</div>
+							</div>
+						</div>
+						<div id="dataTable"></div>
+					</div>
+					<div class="bottom_container">
+						<div class="d-flex justify-content-end">
+							<button class="btn reset_btn cancel_btn" onclick="handleCancelSelectRow()">
+								CANCEL
+							</button>
+							<button
+								id="confirmSelection"
+								class="btn reset_btn ml-3 confirm_btn confirm_btn_disabled"
+							>
+								CONFIRM SELECTION
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main container end -->
+		</div>
+
+		<!-- custom js -->
+		<script src="js/reverse-match.js"></script>
+		
+	</body>
+</html>
