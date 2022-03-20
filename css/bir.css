@@ -184,8 +184,22 @@ body {
 }
 
 .main_container {
-	padding: 30px 60px 0px 60px;
+	/* padding: 30px 60px 0px 60px; */
 	width: 100%;
+}
+.top_container_menu_1 {
+	height: 56px;
+	background: #ffffff;
+	border-bottom: 1px solid #d3d5d9;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.top_container_menu_2 {
+	height: 40px;
+	background: #ffffff;
+	border-bottom: 1px solid #d3d5d9;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 .main_body {
