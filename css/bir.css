@@ -228,13 +228,28 @@ body {
 	padding-right: 24px;
 }
 
+.main_body_container {
+	background: #f8f8f8;
+	padding: 16px 24px;
+}
+
+.heading_h3 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242e41;
+	margin: 0px;
+	padding-left: 8px;
+}
+
 .main_body {
-	border: 1px solid #e4e4e4;
+	border: 1px solid #d1d1d1;
 	box-sizing: border-box;
 	border-radius: 8px;
-	height: 65vh;
-	overflow-y: scroll;
-	margin-top: 20px;
+	min-height: 70vh;
+	overflow-y: scroll;	
 }
 
 .cancel_btn {
