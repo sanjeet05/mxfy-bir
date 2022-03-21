@@ -194,6 +194,32 @@ body {
 	padding-left: 24px;
 	padding-right: 24px;
 }
+.top_container_menu_list_1 {
+	padding-left: 8px;
+	padding-right: 8px;
+	border-left: 1px solid #e3e3e3;
+}
+.top_container_menu_list_1 img {
+	width: 24px;
+	height: 24px;
+}
+.top_container_menu_list_1 p {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6d7480;
+	margin-bottom: 0px;
+	padding-left: 8px;
+}
+.top_container_list_active {
+	border-bottom: 4px solid #35abd9;
+}
+.top_container_list_active p {
+	color: #35abd9;
+}
+
 .top_container_menu_2 {
 	height: 40px;
 	background: #ffffff;
