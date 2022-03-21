@@ -76,6 +76,7 @@ body {
 		"left_sidebar top_header top_header"
 		"left_sidebar main_content main_content";
 	height: 100vh;
+	overflow-y: scroll;
 }
 
 .templete_layout_item_1 {
