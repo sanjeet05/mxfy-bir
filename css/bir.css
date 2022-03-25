@@ -128,7 +128,7 @@ body {
 }
 .templete_layout_collapse .logo_left_arrow {
 	transform: rotate(-180deg);
-	right: 2px;
+	right: 5px;
 	top: 56px;
 }
 .templete_layout_collapse .left_menu p {
@@ -159,10 +159,11 @@ body {
 }
 .logo_left_arrow {
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	top: 55px;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .left_menu {
