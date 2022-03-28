@@ -25,7 +25,7 @@
 
 		<title>Maxify Digital - BIR</title>
 	</head>
-	<body>
+	<body onload="dashboardInit()">
 		<div class="templete_layout">
 			<!-- left panel -->
 			<div class="templete_layout_item_1 templete_layout_item_left">
@@ -68,7 +68,7 @@
 						<div class="left_bottom d-flex align-items-center">
 							<div class="left_bottom_name_initials">DC</div>
 							<div class="left_bottom_name">Deepankur Chawla</div>
-							<i class="icon-Arrow_drop_down icon_10 icon_white"></i>
+							<i class="icon-Arrow_drop_down icon_10 icon_white ms-2"></i>
 						</div>
 					</div>
 				</div>
@@ -193,7 +193,280 @@
 						<i class="icon-Expand_down_light icon_14"></i>
 						<h3 class="heading_h3">Reports</h3>
 					</div>
-					<div class="main_body"></div>
+					<div class="main_body p-3">
+						<div class="d-flex align-items-center db_tab_heading" id="tab_1">
+							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(1)"></i>
+							<div
+								class="d-flex align-items-center justify-content-between db_tab_heading_title"
+							>
+								<div>MISSING BAGGAGE</div>
+								<i class="icon-Kebab-1"></i>
+							</div>
+							<div class="db_tab_heading_counts">10 reports</div>
+						</div>
+						<div id="tab_1_data">
+							<table class="table db_data_table">
+								<thead>
+									<tr>
+										<th scope="col">REPORT NUMBER</th>
+										<th scope="col">BAG TAG NUMBER</th>
+										<th scope="col">STATUS</th>
+										<th scope="col">LAST NAME</th>
+										<th scope="col">FIRST NAME</th>
+										<th scope="col">COLOR TYPE</th>
+										<th scope="col">FLIGHT/DATE</th>
+										<th scope="col">ROUTING</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_green">CLOSED</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_yellow">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex align-items-center db_tab_heading" id="tab_2">
+							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(2)"></i>
+							<div
+								class="d-flex align-items-center justify-content-between db_tab_heading_title"
+							>
+								<div>DAMAGED BAGGAGE</div>
+								<i class="icon-Kebab-1"></i>
+							</div>
+							<div class="db_tab_heading_counts">8 reports</div>
+						</div>
+						<div id="tab_2_data">
+							<table class="table db_data_table">
+								<thead>
+									<tr>
+										<th scope="col">REPORT NUMBER</th>
+										<th scope="col">BAG TAG NUMBER</th>
+										<th scope="col">STATUS</th>
+										<th scope="col">LAST NAME</th>
+										<th scope="col">FIRST NAME</th>
+										<th scope="col">COLOR TYPE</th>
+										<th scope="col">FLIGHT/DATE</th>
+										<th scope="col">ROUTING</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_green">CLOSED</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_yellow">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex align-items-center db_tab_heading" id="tab_3">
+							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(3)"></i>
+							<div
+								class="d-flex align-items-center justify-content-between db_tab_heading_title"
+							>
+								<div>PILFERAGE</div>
+								<i class="icon-Kebab-1"></i>
+							</div>
+							<div class="db_tab_heading_counts">10 reports</div>
+						</div>
+						<div id="tab_3_data">
+							<table class="table db_data_table">
+								<thead>
+									<tr>
+										<th scope="col">REPORT NUMBER</th>
+										<th scope="col">BAG TAG NUMBER</th>
+										<th scope="col">STATUS</th>
+										<th scope="col">LAST NAME</th>
+										<th scope="col">FIRST NAME</th>
+										<th scope="col">COLOR TYPE</th>
+										<th scope="col">FLIGHT/DATE</th>
+										<th scope="col">ROUTING</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_green">CLOSED</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_yellow">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex align-items-center db_tab_heading" id="tab_4">
+							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(4)"></i>
+							<div
+								class="d-flex align-items-center justify-content-between db_tab_heading_title"
+							>
+								<div>UNCLAIMMED / ON HOLD BAGGAGE</div>
+								<i class="icon-Kebab-1"></i>
+							</div>
+							<div class="db_tab_heading_counts">10 reports</div>
+						</div>
+						<div id="tab_4_data">
+							<table class="table db_data_table">
+								<thead>
+									<tr>
+										<th scope="col">REPORT NUMBER</th>
+										<th scope="col">BAG TAG NUMBER</th>
+										<th scope="col">STATUS</th>
+										<th scope="col">LAST NAME</th>
+										<th scope="col">FIRST NAME</th>
+										<th scope="col">COLOR TYPE</th>
+										<th scope="col">FLIGHT/DATE</th>
+										<th scope="col">ROUTING</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_red">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_green">CLOSED</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+									<tr>
+										<td>DELMX2100043M</td>
+										<td>08790223399</td>
+										<td class="db_data_table_status_yellow">OPEN</td>
+										<td>Edwards</td>
+										<td>Brandon</td>
+										<td>BK02H32D</td>
+										<td>MX 329 / 21 MAY</td>
+										<td>CCU / GHY</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

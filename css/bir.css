@@ -378,8 +378,13 @@ body {
 	border: 1px solid #d1d1d1;
 	box-sizing: border-box;
 	border-radius: 8px;
-	min-height: 75vh;
+	height: 75vh;
 	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.main_body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 .add_button {
@@ -434,3 +439,102 @@ body {
 }
 
 /* common css - end */
+
+/* dashboard - start */
+.db_tab_heading {
+	margin-top: 16px;
+}
+.db_tab_heading:first-child {
+	margin-top: 0px;
+}
+.db_tab_heading .db_tab_heading_icon {
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.db_tab_heading .db_tab_heading_title {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+
+	width: 253px;
+	height: 44px;
+	left: 28px;
+	top: 0px;
+	background: #8b8b8b;
+	border-radius: 8px 8px 0px 0px;
+	padding-left: 8px;
+	margin-left: 12px;
+	transition: all 0.3s;
+}
+.db_tab_heading_active .db_tab_heading_icon {
+	transform: rotate(90deg);
+}
+.db_tab_heading_active .db_tab_heading_title {
+	background: #5a7e95;
+}
+.db_tab_heading .db_tab_heading_title i::before {
+	color: #ffffff;
+	font-size: 18px;
+	padding-right: 12px;
+}
+.db_tab_heading .db_tab_heading_counts {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #6d7480;
+	padding-left: 8px;
+}
+.db_data_table {
+	font-family: "Raleway";
+	border-collapse: separate;
+	border-spacing: 0 5px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	transition: all 0.3s;
+}
+.db_data_table thead tr th {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 8px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+	white-space: nowrap;
+	border: 0px;
+}
+.db_data_table tbody tr {
+	background: #ffffff;
+	box-shadow: 0px 4px 8px rgba(7, 9, 13, 0.08);
+}
+.db_data_table tbody tr td {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	border: 0px;
+}
+
+.db_data_table_status_red {
+	background: #bf5054 !important;
+	color: #ffffff !important;
+}
+.db_data_table_status_green {
+	background: #2e8f73 !important;
+	color: #ffffff !important;
+}
+.db_data_table_status_yellow {
+	background: #cc9031 !important;
+	color: #ffffff !important;
+}
+
+/* dashboard - end */
