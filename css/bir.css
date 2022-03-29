@@ -331,6 +331,7 @@ body {
 .top_container_menu_list_2 {
 	padding-left: 8px;
 	padding-right: 8px;
+	height: 32px;
 }
 .top_container_menu_list_2 p {
 	font-family: "Raleway";
@@ -380,6 +381,18 @@ body {
 	border-right: 1px solid #e3e3e3;
 	height: 22px;
 	padding-left: 5px;
+}
+
+.active_group {
+	background: #d7eef7;
+	border-radius: 8px;	
+	
+}
+.active_group p {
+	color: #35abd9;
+}
+.active_group i::before {
+	color: #35abd9;
 }
 
 .main_body_container {
