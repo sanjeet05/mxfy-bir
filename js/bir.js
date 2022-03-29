@@ -2,7 +2,15 @@
 function toggleLeftSidebar(event) {
 	const templeteLayout = document.querySelectorAll(".templete_layout");
 	if (templeteLayout.length != 0) {
-		templeteLayout[0].classList.toggle("templete_layout_collapse");
+		templeteLayout[0].classList.toggle("templete_layout_left_collapse");
+	}
+}
+
+// on click of left panel close double arrow
+function toggleRightSidebar(event) {
+	const templeteLayout = document.querySelectorAll(".templete_layout");
+	if (templeteLayout.length != 0) {
+		templeteLayout[0].classList.toggle("templete_layout_right_collapse");
 	}
 }
 

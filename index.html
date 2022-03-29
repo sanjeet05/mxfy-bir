@@ -130,6 +130,8 @@
 						<img src="images/setting.svg" class="" alt="" />
 					</div>
 				</div>
+			</div>
+			<div class="templete_layout_item_3">
 				<div class="top_container_menu_2 d-flex justify-content-between">
 					<div class="d-flex align-items-center right_border">
 						<div class="icon_search">
@@ -168,7 +170,11 @@
 								<p>Me</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center"
+							onclick="toggleRightSidebar(event)"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_2">
 								<img src="images/me.svg" alt="" />
 								<p>Assignees</p>
@@ -184,7 +190,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="templete_layout_item_3">
+
+			<div class="templete_layout_item_4">
+				<div class="right_sidebar_container">
+					<div class="d-flex justify-content-between">
+						<div class="right_sidebar_heading">Assignees</div>
+						<i
+							class="icon-Expand_right_double_light icon_14 cp"
+							onclick="toggleRightSidebar(event)"
+						></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="templete_layout_item_5">
 				<div class="add_button">
 					<img src="images/add_square_light.svg" class="" alt="" />
 				</div>
@@ -195,7 +214,10 @@
 					</div>
 					<div class="main_body p-3">
 						<div class="d-flex align-items-center db_tab_heading" id="tab_1">
-							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(1)"></i>
+							<i
+								class="icon-Expand_right_light db_tab_heading_icon"
+								onclick="activeDashboardTab(1)"
+							></i>
 							<div
 								class="d-flex align-items-center justify-content-between db_tab_heading_title"
 							>
@@ -263,7 +285,10 @@
 							</table>
 						</div>
 						<div class="d-flex align-items-center db_tab_heading" id="tab_2">
-							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(2)"></i>
+							<i
+								class="icon-Expand_right_light db_tab_heading_icon"
+								onclick="activeDashboardTab(2)"
+							></i>
 							<div
 								class="d-flex align-items-center justify-content-between db_tab_heading_title"
 							>
@@ -331,7 +356,10 @@
 							</table>
 						</div>
 						<div class="d-flex align-items-center db_tab_heading" id="tab_3">
-							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(3)"></i>
+							<i
+								class="icon-Expand_right_light db_tab_heading_icon"
+								onclick="activeDashboardTab(3)"
+							></i>
 							<div
 								class="d-flex align-items-center justify-content-between db_tab_heading_title"
 							>
@@ -399,7 +427,10 @@
 							</table>
 						</div>
 						<div class="d-flex align-items-center db_tab_heading" id="tab_4">
-							<i class="icon-Expand_right_light db_tab_heading_icon" onclick="activeDashboardTab(4)"></i>
+							<i
+								class="icon-Expand_right_light db_tab_heading_icon"
+								onclick="activeDashboardTab(4)"
+							></i>
 							<div
 								class="d-flex align-items-center justify-content-between db_tab_heading_title"
 							>
