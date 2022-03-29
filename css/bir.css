@@ -123,6 +123,7 @@ body {
 .templete_layout_item_5 {
 	grid-area: main_content;
 	min-width: 992px;
+	position: relative;
 }
 
 .templete_layout_right_collapse {
@@ -419,11 +420,37 @@ body {
 	border-radius: 56px;
 	text-align: center;
 	line-height: 50px;
-	position: fixed;
+	position: absolute;
 	right: 30px;
-	bottom: 42px;
+	bottom: 28px;
 	z-index: 50;
 	cursor: pointer;
+}
+.add_button_popup {
+	position: absolute;
+	right: 30px;
+	bottom: 75px;
+	z-index: 50;
+}
+
+.add_button_popup_list {
+	list-style-type: none;
+}
+.add_button_popup_list li {
+	text-align: right;
+	margin-bottom: 8px;
+}
+.add_button_popup_list li span {
+	background: #083e60;
+	color: #ffffff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.add_button_icon {
+	transform: rotate(45deg);
+	transition: all 0.03s;
 }
 
 .cancel_btn {

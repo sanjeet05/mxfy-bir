@@ -39,3 +39,8 @@ function activeDashboardTab(tabNumber) {
 		document.getElementById("tab_4_data").classList.toggle("d-none");
 	}
 }
+
+function toggleAddButtonPopup() {
+	document.getElementById("addButtonPopup").classList.toggle("d-none");
+	document.getElementById("addButtonIcon").classList.toggle("add_button_icon");
+}

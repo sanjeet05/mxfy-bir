@@ -204,8 +204,15 @@
 			</div>
 
 			<div class="templete_layout_item_5">
-				<div class="add_button">
-					<img src="images/add_square_light.svg" class="" alt="" />
+				<div class="add_button" onclick="toggleAddButtonPopup()">
+					<img src="images/add_square_light.svg" id="addButtonIcon" alt="" />
+				</div>
+				<div class="add_button_popup d-none" id="addButtonPopup">
+					<ul class="add_button_popup_list">
+						<li><span>Scan boarding pass</span></li>
+						<li><span>New Missing Baggage Reports</span></li>
+						<li><span>New Unclaimed On Hold Reports</span></li>
+					</ul>
 				</div>
 				<div class="main_body_container">
 					<div class="d-flex align-items-center mb_10">
