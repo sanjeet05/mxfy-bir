@@ -110,11 +110,11 @@ body {
 }
 .templete_layout_item_2 {
 	grid-area: top_header;
-	min-width: 992px;
+	min-width: 900px;
 }
 .templete_layout_item_3 {
 	grid-area: top_sub_header;
-	min-width: 992px;
+	min-width: 900px;
 }
 .templete_layout_item_4 {
 	grid-area: right_sidebar;
@@ -122,7 +122,7 @@ body {
 }
 .templete_layout_item_5 {
 	grid-area: main_content;
-	min-width: 992px;
+	min-width: 900px;
 	position: relative;
 }
 
