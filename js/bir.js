@@ -44,3 +44,10 @@ function toggleAddButtonPopup() {
 	document.getElementById("addButtonPopup").classList.toggle("d-none");
 	document.getElementById("addButtonIcon").classList.toggle("add_button_icon");
 }
+
+function toggleSubHeaderMe() {
+	document.getElementById("noDataItem1").classList.toggle("d-none");
+	document.getElementById("withDataItem1").classList.toggle("d-none");
+	document.getElementById("withDataItem2").classList.toggle("d-none");
+}
+
