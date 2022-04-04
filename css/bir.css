@@ -87,6 +87,12 @@ body {
 .icon_14 {
 	font-size: 14px;
 }
+.icon_16 {
+	font-size: 16px;
+}
+.icon_18 {
+	font-size: 18px;
+}
 .icon_20 {
 	font-size: 20px;
 }
@@ -665,6 +671,18 @@ body {
 	color: #242e41;
 	border: 0px;
 }
+.db_data_table .table_row_option_icon {
+	display: none;
+}
+.db_data_table .table_row_option_icon::before {
+	color: #35abd9;
+}
+.db_data_table tbody tr:hover {
+	background-color: #d1d1d1;
+}
+.db_data_table tbody tr:hover .table_row_option_icon {
+	display: inline-block;
+}
 
 .db_data_table_status_red {
 	background: #bf5054 !important;
@@ -795,4 +813,37 @@ body {
 	color: #35abd9;
 }
 
+.group_menu {
+	background: #ffffff;
+	box-shadow: 0px 9px 18px rgba(7, 9, 13, 0.15);
+	border-radius: 8px;
+	border: 0px;
+}
+.group_menu li {
+	margin: 0px 6px;
+}
+.group_menu .dropdown-item {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.group_menu .dropdown-item i::before {
+	color: #242e41;
+	font-size: 14px;
+	line-height: 21px;
+	padding-right: 12px;
+}
+.group_menu .dropdown-item p {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	margin: 0px;
+}
+.group_menu .dropdown-item:hover {
+	background-color: #d1d1d1;
+	border-radius: 6px;
+}
 /* dashboard - end */
