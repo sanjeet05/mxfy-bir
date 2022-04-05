@@ -11,6 +11,7 @@ function toggleRightSidebar(event) {
 	const templeteLayout = document.querySelectorAll(".templete_layout");
 	if (templeteLayout.length != 0) {
 		templeteLayout[0].classList.toggle("templete_layout_right_collapse");
+		document.getElementById("activeAssignees").classList.toggle("active_assignees");		
 	}
 }
 
@@ -46,6 +47,7 @@ function toggleAddButtonPopup() {
 }
 
 function toggleSubHeaderMe() {
+	document.getElementById("activeMe").classList.toggle("active_me");
 	document.getElementById("noDataItem1").classList.toggle("d-none");
 	document.getElementById("withDataItem1").classList.toggle("d-none");
 	document.getElementById("withDataItem2").classList.toggle("d-none");

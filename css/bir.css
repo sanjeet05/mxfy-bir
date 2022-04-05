@@ -337,6 +337,8 @@ body {
 .top_container_menu_list_2 {
 	padding-left: 8px;
 	padding-right: 8px;
+	margin-left: 4px;
+	margin-right: 4px;
 	height: 32px;
 }
 .top_container_menu_list_2 p {
@@ -846,4 +848,20 @@ body {
 	background-color: #d1d1d1;
 	border-radius: 6px;
 }
+
+.active_me {
+	background: #083e60;
+	border-radius: 8px;
+}
+.active_me p {
+	color: #ffffff;
+}
+.active_assignees {
+	background: #35abd9;
+	border-radius: 8px;
+}
+.active_assignees p {
+	color: #ffffff;
+}
+
 /* dashboard - end */
