@@ -157,7 +157,12 @@
 								<p>Filter</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center"
+							data-bs-toggle="dropdown"
+							id="dropdown_GroupByReports"
+						>
 							<div
 								class="d-flex align-items-center top_container_menu_list_2 active_group"
 							>
@@ -166,12 +171,48 @@
 							</div>
 						</a>
 
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_GroupByReports"
+						>
+							<li>
+								<div class="dropdown-header">GROUP BY</div>
+							</li>
+							<li>
+								<div class="dropdown-item cp d-flex group_by_active">
+									<i class="icon-Chart_alt_light icon_14"></i>
+									<p>Reports <i>(Default)</i></p>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown-item cp d-flex">
+									<i class="icon-Chart_alt_light icon_14"></i>
+									<p>Priority</p>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown-item cp d-flex">
+									<i class="icon-Chart_alt_light icon_14"></i>
+									<p>Assignee</p>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown-item cp d-flex">
+									<i class="icon-Calendar_light icon_14"></i>
+									<p>Due Date</p>
+								</div>
+							</li>
+						</ul>
+
 						<a
 							href="#"
-							class="text_decoration_none d-flex align-items-center"							
+							class="text_decoration_none d-flex align-items-center"
 							onclick="toggleSubHeaderMe(event)"
 						>
-							<div class="d-flex align-items-center top_container_menu_list_2" id="activeMe">
+							<div
+								class="d-flex align-items-center top_container_menu_list_2"
+								id="activeMe"
+							>
 								<img src="images/me.svg" alt="" />
 								<p>Me</p>
 							</div>
@@ -181,18 +222,68 @@
 							class="text_decoration_none d-flex align-items-center"
 							onclick="toggleRightSidebar(event)"
 						>
-							<div class="d-flex align-items-center top_container_menu_list_2" id="activeAssignees">
+							<div
+								class="d-flex align-items-center top_container_menu_list_2"
+								id="activeAssignees"
+							>
 								<img src="images/me.svg" alt="" />
 								<p>Assignees</p>
 							</div>
 						</a>
 
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center"
+							data-bs-toggle="dropdown"
+							data-bs-auto-close="outside"
+							id="dropdown_ShowSubHeader"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_2">
 								<i class="icon-Eye_light icon_14"></i>
 								<p>Show</p>
 							</div>
 						</a>
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_ShowSubHeader"
+						>
+							<li>
+								<div class="dropdown-header">Shows</div>
+							</li>
+							<li>
+								<div
+									class="dropdown-item cp d-flex justify-content-between align-items-center"
+								>
+									<p>Report Location</p>
+									<label class="switch ms-3">
+										<input class="switch_input" type="checkbox" />
+										<span class="switch_slider"></span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div
+									class="dropdown-item cp d-flex justify-content-between align-items-center"
+								>
+									<p>Closed Reports</p>
+									<label class="switch ms-3">
+										<input class="switch_input" type="checkbox" />
+										<span class="switch_slider"></span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div
+									class="dropdown-item cp d-flex justify-content-between align-items-center"
+								>
+									<p>Priority Reports</p>
+									<label class="switch ms-3">
+										<input class="switch_input" type="checkbox" />
+										<span class="switch_slider"></span>
+									</label>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

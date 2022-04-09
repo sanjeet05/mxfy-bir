@@ -527,7 +527,6 @@ body {
 	display: inline-block;
 	width: 38px;
 	height: 20px;
-	margin: 0px !important;
 }
 
 .switch .switch_input {
@@ -849,6 +848,17 @@ body {
 	border-radius: 6px;
 }
 
+.group_menu .dropdown-header {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+	padding: 0px 0px 4px 8px !important;
+}
+
 .active_me {
 	background: #083e60;
 	border-radius: 8px;
@@ -862,6 +872,17 @@ body {
 }
 .active_assignees p {
 	color: #ffffff;
+}
+
+.group_by_active p {
+	color: #35abd9 !important;
+	font-weight: 600 !important;
+}
+.group_by_active p i {
+	font-weight: 400 !important;
+}
+.group_by_active i::before {
+	color: #35abd9 !important;
 }
 
 /* dashboard - end */
