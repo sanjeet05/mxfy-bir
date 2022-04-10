@@ -7,11 +7,34 @@ function toggleLeftSidebar(event) {
 }
 
 // on click of left panel close double arrow
-function toggleRightSidebar(event) {
+let prevClicked = "none";
+function toggleRightSidebar(action = "none") {
 	const templeteLayout = document.querySelectorAll(".templete_layout");
 	if (templeteLayout.length != 0) {
-		templeteLayout[0].classList.toggle("templete_layout_right_collapse");
-		document.getElementById("activeAssignees").classList.toggle("active_assignees");		
+		if (prevClicked === "none") {
+			templeteLayout[0].classList.toggle("templete_layout_right_collapse");
+			prevClicked = action;
+		} else if (prevClicked === action) {
+			templeteLayout[0].classList.toggle("templete_layout_right_collapse");
+			prevClicked = action;
+		} else if (prevClicked !== action) {
+			templeteLayout[0].classList.remove("templete_layout_right_collapse");
+			templeteLayout[0].classList.toggle("templete_layout_right_collapse");
+			prevClicked = action;
+		}
+	}
+	if (action === "assignees") {
+		document.getElementById("broadcastBody").classList.add("d-none");
+		document.getElementById("assigneesBody").classList.toggle("d-none");
+		document
+			.getElementById("activeAssignees")
+			.classList.toggle("active_assignees");
+	} else if (action === "broadcast") {
+		document.getElementById("assigneesBody").classList.add("d-none");
+		document.getElementById("broadcastBody").classList.toggle("d-none");
+		document
+			.getElementById("activeAssignees")
+			.classList.remove("active_assignees");
 	}
 }
 
@@ -52,4 +75,3 @@ function toggleSubHeaderMe() {
 	document.getElementById("withDataItem1").classList.toggle("d-none");
 	document.getElementById("withDataItem2").classList.toggle("d-none");
 }
-

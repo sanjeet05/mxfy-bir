@@ -220,7 +220,7 @@
 						<a
 							href="#"
 							class="text_decoration_none d-flex align-items-center"
-							onclick="toggleRightSidebar(event)"
+							onclick="toggleRightSidebar('assignees')"
 						>
 							<div
 								class="d-flex align-items-center top_container_menu_list_2"
@@ -289,12 +289,12 @@
 			</div>
 
 			<div class="templete_layout_item_4">
-				<div class="right_sidebar_container">
+				<div class="right_sidebar_container d-none" id="assigneesBody">
 					<div class="d-flex justify-content-between">
 						<div class="right_sidebar_heading">Assignees</div>
 						<i
 							class="icon-Expand_right_double_light icon_14 cp"
-							onclick="toggleRightSidebar(event)"
+							onclick="toggleRightSidebar('assignees')"
 						></i>
 					</div>
 					<div class="mt-2">
@@ -340,6 +340,63 @@
 								<span class="switch_slider"></span>
 							</label>
 						</div>
+					</div>
+				</div>
+				<div class="right_sidebar_container d-none" id="broadcastBody">
+					<div class="d-flex justify-content-between">
+						<div class="right_sidebar_heading">Broadcast</div>
+						<i
+							class="icon-Expand_right_double_light icon_14 cp"
+							onclick="toggleRightSidebar('broadcast')"
+						></i>
+					</div>
+					<div class="mt-2">
+						<div class="icon_search_2">
+							<img src="images/search_icon.svg" class="" alt="" />
+							<input type="text" placeholder="Search" />
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3">
+						<div class="right_sidebar_sub_heading">AIRPORTS</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3">
+						<div class="d-flex align-items-center">
+							<div class="d-flex flex-column right_sidebar_task pl_0">
+								<div>Visakhapatnam International Airport</div>
+								<span>Visakhapatnam</span>
+							</div>
+						</div>
+						<div class="broadcast_pill pill_blue">00:12:24</div>
+					</div>
+					<div class="broadcast_pill_divider"></div>
+					<div class="d-flex justify-content-between mt-3">
+						<div class="d-flex align-items-center">
+							<div class="d-flex flex-column right_sidebar_task pl_0">
+								<div>Itanagar Airport</div>
+								<span>Itanagar</span>
+							</div>
+						</div>
+						<div class="broadcast_pill pill_green">00:12:24</div>
+					</div>
+					<div class="broadcast_pill_divider"></div>
+					<div class="d-flex justify-content-between mt-3">
+						<div class="d-flex align-items-center">
+							<div class="d-flex flex-column right_sidebar_task pl_0">
+								<div>Tezu Airport</div>
+								<span>Tezu</span>
+							</div>
+						</div>
+						<div class="broadcast_pill pill_red">00:12:24</div>
+					</div>
+					<div class="broadcast_pill_divider"></div>
+					<div class="d-flex justify-content-between mt-3">
+						<div class="d-flex align-items-center">
+							<div class="d-flex flex-column right_sidebar_task pl_0">
+								<div>Pasighat Airport</div>
+								<span>Pasighat</span>
+							</div>
+						</div>
+						<div class="broadcast_pill pill_yellow">00:12:24</div>
 					</div>
 				</div>
 			</div>
@@ -467,7 +524,7 @@
 														<p>Delete</p>
 													</div>
 												</li>
-												<li>
+												<li onclick="toggleRightSidebar('broadcast')">
 													<div class="dropdown-item cp d-flex">
 														<i class="icon-link_alt_light"></i>
 														<p>Broadcast</p>
