@@ -151,12 +151,79 @@
 								<p>Expand All Groups</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center"
+							data-bs-toggle="dropdown"
+							data-bs-auto-close="outside"
+							id="dropdown_subHeader_Filter"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_2">
 								<img src="images/me.svg" alt="" />
 								<p>Filter</p>
 							</div>
 						</a>
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_subHeader_Filter"
+							style="min-width: 250px"
+						>
+							<li>
+								<div class="dropdown-header">ACTIVE FILTERS</div>
+							</li>
+							<li>
+								<div
+									class="dropdown-item d-flex justify-content-between dropdown_item_no_hover"
+								>
+									<div
+										class="d-flex cp add_flter"
+										data-bs-toggle="dropdown"
+										id="dropdown_subHeader_Filter_2"
+									>
+										<i
+											class="icon-Chart_alt_light icon_14 icon_padding_rt_5"
+										></i>
+										<p>Add Filter</p>
+									</div>
+									<ul
+										class="dropdown-menu group_menu mt_10"
+										aria-labelledby="dropdown_subHeader_Filter_2"
+									>
+										<li>
+											<div class="dropdown-header">ADD FILTERS</div>
+										</li>
+										<li>
+											<div class="dropdown-item cp d-flex">
+												<p>Status</p>
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-item cp d-flex">
+												<p>Priority</p>
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-item cp d-flex">
+												<p>Assignee</p>
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-item cp d-flex">
+												<p>Created By</p>
+											</div>
+										</li>
+									</ul>
+
+									<div class="d-flex">
+										<i
+											class="icon-Materials_light icon_14 icon_padding_rt_5"
+										></i>
+										<p>Templates</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+
 						<a
 							href="#"
 							class="text_decoration_none d-flex align-items-center"
@@ -252,10 +319,10 @@
 							</li>
 							<li>
 								<div
-									class="dropdown-item cp d-flex justify-content-between align-items-center"
+									class="dropdown-item d-flex justify-content-between align-items-center dropdown_item_no_hover"
 								>
 									<p>Report Location</p>
-									<label class="switch ms-3">
+									<label class="switch cp ms-3">
 										<input class="switch_input" type="checkbox" />
 										<span class="switch_slider"></span>
 									</label>
@@ -263,10 +330,10 @@
 							</li>
 							<li>
 								<div
-									class="dropdown-item cp d-flex justify-content-between align-items-center"
+									class="dropdown-item d-flex justify-content-between align-items-center dropdown_item_no_hover"
 								>
 									<p>Closed Reports</p>
-									<label class="switch ms-3">
+									<label class="switch cp ms-3">
 										<input class="switch_input" type="checkbox" />
 										<span class="switch_slider"></span>
 									</label>
@@ -274,10 +341,10 @@
 							</li>
 							<li>
 								<div
-									class="dropdown-item cp d-flex justify-content-between align-items-center"
+									class="dropdown-item d-flex justify-content-between align-items-center dropdown_item_no_hover"
 								>
 									<p>Priority Reports</p>
-									<label class="switch ms-3">
+									<label class="switch cp ms-3">
 										<input class="switch_input" type="checkbox" />
 										<span class="switch_slider"></span>
 									</label>
