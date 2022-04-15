@@ -171,6 +171,16 @@
 							<li>
 								<div class="dropdown-header">ACTIVE FILTERS</div>
 							</li>
+							<li id="addWhereFilter" class="d-none">
+								<div
+									class="dropdown-item d-flex justify-content-between dropdown_item_no_hover"
+								>
+									<div class="where_input_label">Where</div>
+									<input class="where_input_1" value="Priority" />
+									<input class="where_input_2" value="Is" />
+									<input class="where_input_3" />
+								</div>
+							</li>
 							<li>
 								<div
 									class="dropdown-item d-flex justify-content-between dropdown_item_no_hover"
@@ -192,7 +202,7 @@
 										<li>
 											<div class="dropdown-header">ADD FILTERS</div>
 										</li>
-										<li>
+										<li onclick="addWhereFilter()">
 											<div class="dropdown-item cp d-flex">
 												<p>Status</p>
 											</div>

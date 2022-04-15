@@ -75,3 +75,7 @@ function toggleSubHeaderMe() {
 	document.getElementById("withDataItem1").classList.toggle("d-none");
 	document.getElementById("withDataItem2").classList.toggle("d-none");
 }
+
+function addWhereFilter() {
+	document.getElementById("addWhereFilter").classList.remove("d-none");
+}
