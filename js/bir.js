@@ -71,11 +71,15 @@ function toggleAddButtonPopup() {
 
 function toggleSubHeaderMe() {
 	document.getElementById("activeMe").classList.toggle("active_me");
-	document.getElementById("noDataItem1").classList.toggle("d-none");
-	document.getElementById("withDataItem1").classList.toggle("d-none");
-	document.getElementById("withDataItem2").classList.toggle("d-none");
+	document.getElementById("noDataItem1")?.classList.toggle("d-none");
+	document.getElementById("withDataItem1")?.classList.toggle("d-none");
+	document.getElementById("withDataItem2")?.classList.toggle("d-none");
 }
 
 function addWhereFilter() {
 	document.getElementById("addWhereFilter").classList.remove("d-none");
+}
+
+function removeWhereFilter() {
+	document.getElementById("addWhereFilter").classList.add("d-none");
 }
