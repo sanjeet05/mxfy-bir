@@ -491,6 +491,13 @@ body {
 	text-align: right;
 	margin-bottom: 8px;
 }
+.add_button_popup_list li i {
+	padding-right: 2px;
+	font-size: 14px;
+}
+.add_button_popup_list li i::before {
+	color: #ffffff;
+}
 .add_button_popup_list li span {
 	background: #083e60;
 	color: #ffffff;
