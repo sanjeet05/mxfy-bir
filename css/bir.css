@@ -893,16 +893,48 @@ body {
 .active_me {
 	background: #083e60;
 	border-radius: 8px;
+	position: relative;
 }
 .active_me p {
 	color: #ffffff;
 }
+.active_me i::before {
+	color: #ffffff;
+}
+.active_me .cross_icon {
+	display: inline-block !important;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	z-index: 2;
+	background: #083e60;
+	padding-left: 4px;
+}
+
 .active_assignees {
 	background: #35abd9;
 	border-radius: 8px;
+	position: relative;
+}
+.active_assignees:hover {
+	background: #083e60;
 }
 .active_assignees p {
 	color: #ffffff;
+}
+.active_assignees i::before {
+	color: #ffffff;
+}
+.active_assignees:hover .cross_icon {
+	display: inline-block !important;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	z-index: 2;
+	background: #083e60;
+	padding-left: 4px;
 }
 
 .group_by_active p {
