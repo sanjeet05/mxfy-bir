@@ -103,19 +103,28 @@
 								<p>Board</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_1">
 								<i class="icon-Bag_alt_light-Stroke icon_20"></i>
 								<p>Trace Baggage</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_1">
 								<i class="icon-Chat_light icon_20"></i>
 								<p>Chat</p>
 							</div>
 						</a>
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_1">
 								<i class="icon-File_dock_light-Stroke icon_20"></i>
 								<p>Documents</p>
@@ -123,6 +132,50 @@
 						</a>
 					</div>
 					<div class="d-flex align-items-center">
+						<i
+							class="icon-Kebab-2 icon_14 mr_5 cp d-none show_tablet"
+							data-bs-toggle="dropdown"
+							id="dropdown_tablet_header"
+						></i>
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_tablet_header"
+						>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Bag_alt_light-Stroke icon_20"></i>
+										<p>Trace Baggage</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Chat_light icon_20"></i>
+										<p>Chat</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-File_dock_light-Stroke icon_20"></i>
+										<p>Documents</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
 						<img src="images/notification.svg" class="pr-2" alt="" />
 						<!-- <img src="images/setting.svg" class="" alt="" /> -->
 					</div>
@@ -142,7 +195,10 @@
 						<i class="icon-Arrow_drop_down icon_10 icon_black_2"></i>
 					</div>
 					<div class="d-flex">
-						<a href="#" class="text_decoration_none d-flex align-items-center">
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
 							<div class="d-flex align-items-center top_container_menu_list_2">
 								<i class="icon-Expand_down_stop_light-Stroke icon_14"></i>
 								<p>Expand All Groups</p>
@@ -285,7 +341,7 @@
 
 						<a
 							href="#"
-							class="text_decoration_none d-flex align-items-center"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
 							onclick="toggleSubHeaderMe(event)"
 						>
 							<div
@@ -299,7 +355,7 @@
 						</a>
 						<a
 							href="#"
-							class="text_decoration_none d-flex align-items-center"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
 							onclick="toggleRightSidebar('assignees')"
 						>
 							<div
@@ -314,7 +370,7 @@
 
 						<a
 							href="#"
-							class="text_decoration_none d-flex align-items-center"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
 							data-bs-toggle="dropdown"
 							data-bs-auto-close="outside"
 							id="dropdown_ShowSubHeader"
@@ -365,6 +421,12 @@
 								</div>
 							</li>
 						</ul>
+
+						<div
+							class="d-flex align-items-center top_container_menu_list_2 d-none show_tablet mt_5"
+						>
+							<i class="icon-Kebab-2 icon_14 cp"></i>
+						</div>
 					</div>
 				</div>
 			</div>

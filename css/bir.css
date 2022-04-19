@@ -25,6 +25,12 @@ body {
 /* reset bootstrap end */
 
 /* common css - start */
+.mt_5 {
+	margin-top: 5px !important;
+}
+.mb_5 {
+	margin-bottom: 5px !important;
+}
 .ml_5 {
 	margin-left: 5px !important;
 }
@@ -1181,3 +1187,24 @@ body {
 }
 
 /* board - end */
+
+/* for tablet - start */
+/* Apple iPad Pro 11 */
+@media (min-width: 768px) and (max-width: 900px) {
+}
+@media (max-width: 900px) {
+	.hide_tablet {
+		display: none !important;
+	}
+	.show_tablet {
+		display: initial !important;
+	}
+	.templete_layout_item_2 {
+		min-width: 100%;
+	}
+	.templete_layout_item_3 {
+		min-width: 100%;
+	}
+}
+
+/* for tablet - end */
