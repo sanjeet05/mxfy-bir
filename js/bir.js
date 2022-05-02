@@ -28,13 +28,21 @@ function toggleRightSidebar(action = "none") {
 		document.getElementById("assigneesBody").classList.toggle("d-none");
 		document
 			.getElementById("activeAssignees")
-			.classList.toggle("active_assignees");
+			?.classList.toggle("active_assignees");
+
+		document
+			.getElementById("activeAssigneesTablet")
+			?.classList.toggle("active_assignees");
 	} else if (action === "broadcast") {
 		document.getElementById("assigneesBody").classList.add("d-none");
 		document.getElementById("broadcastBody").classList.toggle("d-none");
 		document
 			.getElementById("activeAssignees")
-			.classList.remove("active_assignees");
+			?.classList.remove("active_assignees");
+
+		document
+			.getElementById("activeAssigneesTablet")
+			?.classList.remove("active_assignees");
 	}
 }
 
@@ -70,7 +78,8 @@ function toggleAddButtonPopup() {
 }
 
 function toggleSubHeaderMe() {
-	document.getElementById("activeMe").classList.toggle("active_me");
+	document.getElementById("activeMe")?.classList.toggle("active_me");
+	document.getElementById("activeMeTablet")?.classList.toggle("active_me");
 	document.getElementById("noDataItem1")?.classList.toggle("d-none");
 	document.getElementById("withDataItem1")?.classList.toggle("d-none");
 	document.getElementById("withDataItem2")?.classList.toggle("d-none");

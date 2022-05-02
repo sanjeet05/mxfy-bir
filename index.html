@@ -294,7 +294,7 @@
 
 						<a
 							href="#"
-							class="text_decoration_none d-flex align-items-center"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
 							data-bs-toggle="dropdown"
 							id="dropdown_GroupByReports"
 						>
@@ -425,7 +425,53 @@
 						<div
 							class="d-flex align-items-center top_container_menu_list_2 d-none show_tablet mt_5"
 						>
-							<i class="icon-Kebab-2 icon_14 cp"></i>
+							<i
+								class="icon-Kebab-2 icon_14 cp"
+								data-bs-toggle="dropdown"
+								id="dropdown_tablet_sub_header"
+							></i>
+
+							<ul
+								class="dropdown-menu group_menu"
+								aria-labelledby="dropdown_tablet_sub_header"
+							>
+								<li>
+									<a
+										href="#"
+										class="text_decoration_none d-flex align-items-center"
+										onclick="toggleRightSidebar('assignees')"
+									>
+										<div
+											class="d-flex align-items-center top_container_menu_list_2 w-100"
+											id="activeAssigneesTablet"
+										>
+											<i class="icon-User_box_light-Stroke icon_14"></i>
+											<p>Assignees</p>
+											<i
+												class="icon-Close_round_light-Stroke d-none cross_icon"
+											></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text_decoration_none d-flex align-items-center"
+										onclick="toggleSubHeaderMe(event)"
+									>
+										<div
+											class="d-flex align-items-center top_container_menu_list_2 w-100"
+											id="activeMeTablet"
+										>
+											<i class="icon-User_light-Stroke icon_14"></i>
+											<p>Me</p>
+											<i
+												class="icon-Close_round_light-Stroke d-none cross_icon"
+											></i>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -754,7 +800,8 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="d-flex align-items-center db_tab_heading" id="tab_2">
+
+						<!-- <div class="d-flex align-items-center db_tab_heading" id="tab_2">
 							<i
 								class="icon-Expand_right_light-Stroke db_tab_heading_icon"
 								onclick="activeDashboardTab(2)"
@@ -1029,7 +1076,7 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
