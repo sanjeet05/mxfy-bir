@@ -599,31 +599,31 @@
 				</div>
 				<div class="add_button_popup d-none" id="addButtonPopup">
 					<ul class="add_button_popup_list">
-						<li>
+						<li data-bs-toggle="modal" data-bs-target="#missingBaggageReport">
 							<span>
 								<i class="icon-Scan_alt_light-Stroke icon_14"></i>
 								Scan Boarding Pass
 							</span>
 						</li>
-						<li>
+						<li data-bs-toggle="modal" data-bs-target="#missingBaggageReport">
 							<span>
 								<i class="icon-Desk_light icon_14"></i>
 								New Pilfirege Report
 							</span>
 						</li>
-						<li>
+						<li data-bs-toggle="modal" data-bs-target="#missingBaggageReport">
 							<span>
 								<i class="icon-Bag-Missing icon_14"></i>
 								New Missing Baggage Report
 							</span>
 						</li>
-						<li>
+						<li data-bs-toggle="modal" data-bs-target="#missingBaggageReport">
 							<span>
 								<i class="icon-Bag_light-Stroke icon_14"></i>
 								New Damaged Baggage Report
 							</span>
 						</li>
-						<li>
+						<li data-bs-toggle="modal" data-bs-target="#missingBaggageReport">
 							<span>
 								<i class="icon-Bag-Stroke icon_14"></i>
 								New Unclaimed On Hold Report
@@ -1077,6 +1077,127 @@
 								</tbody>
 							</table>
 						</div> -->
+					</div>
+				</div>
+
+				<!-- Modal -->
+				<div
+					class="modal fade"
+					id="missingBaggageReport"
+					tabindex="-1"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header modal_header">
+								<div class="d-flex w-100 justify-content-between modal_heading">
+									<h5 class="modal-title">New Missing Baggage Report</h5>
+									<label>Logged In Airport Location: DEL</label>
+								</div>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-4">
+										<div class="icon_search_2">
+											<i class="icon-Search_alt_light-Stroke"></i>
+											<input type="text" placeholder="Search PNR" />
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="icon_search_2">
+											<i class="icon-Search_alt_light-Stroke"></i>
+											<input type="text" placeholder="Search Last Name" />
+										</div>
+									</div>
+									<div class="col-4">
+										<button
+											type="button"
+											class="btn reset_btn btn_search"
+											onclick="handleModalSearch()"
+										>
+											Search
+										</button>
+									</div>
+								</div>
+								<div class="modal_body">
+									<div
+										id="modalEmpty"
+										class="d-flex align-items-center justify-content-center flex-column h-100 mt-5 mb-4"
+									>
+										<div class="no_data_img">
+											<img src="images/no_data.png" alt="" />
+										</div>
+										<div class="no_data_text_1">
+											You can search by Bag Tag Number, PNR, <br />
+											First Name or Last Name
+										</div>
+									</div>
+									<div id="modalData" class="d-none">
+										<div>
+											<table class="table modal_data_table">
+												<thead>
+													<tr>
+														<th scope="col"></th>
+														<th scope="col" class="modal_col_1">PNR Number</th>
+														<th scope="col">Bag Tag Number</th>
+														<th scope="col">Last Name</th>
+														<th scope="col">First Name</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td scope="col"></td>
+														<td scope="col">
+															<div class="custom_radio custom_radio_primary">
+																<input type="radio" name="group1" id="radio1" />
+																<label for="radio1">12AD21838A928BH12</label>
+															</div>
+														</td>
+														<td scope="col">08790224552</td>
+														<td scope="col">Desai</td>
+														<td scope="col">Arvind</td>
+													</tr>
+													<tr>
+														<td scope="col"></td>
+														<td scope="col">
+															<div class="custom_radio custom_radio_primary">
+																<input type="radio" name="group1" id="radio2" />
+																<label for="radio2">12AD21838A928BH12</label>
+															</div>
+														</td>
+														<td scope="col">08790224552</td>
+														<td scope="col">Desai</td>
+														<td scope="col">Arvind</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button
+									type="button"
+									class="btn reset_btn modal_cancel_btn"
+									data-bs-dismiss="modal"
+								>
+									Cancel
+								</button>
+								<button
+									type="button"
+									class="btn reset_btn modal_save_btn modal_save_btn_dis"
+									id="createReport"
+								>
+									Create Report
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

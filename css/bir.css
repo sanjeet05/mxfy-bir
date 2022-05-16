@@ -1088,6 +1088,207 @@ body {
 	transform: rotate(45deg);
 }
 
+.btn_search {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+
+	background: #242e41;
+	border-radius: 8px;
+	padding: 5px 10px;
+}
+.btn_search:hover {
+	color: #ffffff;
+	background: #242e41;
+}
+
+.modal_heading h5 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242e41;
+}
+
+.modal_heading label {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 0.02em;
+	color: #57b9df;
+	line-height: 24px;
+	padding-right: 20px;
+}
+
+.modal_cancel_btn {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	background: #ffffff;
+}
+.modal_save_btn {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+
+	background: #242e41;
+	border-radius: 8px;
+	padding: 5px 8px;
+}
+.modal_save_btn:hover {
+	background: #242e41;
+	color: #ffffff;
+}
+
+.modal_save_btn_dis {
+	background: #a2a2a2;
+}
+.modal_save_btn_dis:hover {
+	background: #a2a2a2;
+	color: #ffffff;
+}
+
+.modal_header {
+	border-bottom: 0px;
+}
+.modal_body {
+	min-height: 200px;
+}
+
+.modal_data_table {
+	font-family: "Raleway";
+	border-collapse: separate;
+	border-spacing: 0 5px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	transition: all 0.3s;
+	width: 100%;
+	position: relative;
+}
+
+.modal_data_table thead tr th {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+	white-space: nowrap;
+	border: 0px;
+}
+.modal_data_table tbody tr {
+	background: #ffffff;
+}
+.modal_data_table tbody tr td {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #242e41;
+	border: 0px;
+}
+
+.custom_radio {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.modal_col_1 {
+	padding-left: 35px !important;
+}
+
+.custom_radio label {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 10px;
+	margin-bottom: 0px !important;
+
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 23px;
+	color: #475765;
+}
+.custom_radio label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 0;
+	margin-left: -20px;
+	border: 1px solid #242e41;
+	border-radius: 50%;
+	background-color: #fff;
+	-webkit-transition: border 0.15s ease-in-out;
+	-o-transition: border 0.15s ease-in-out;
+	transition: border 0.15s ease-in-out;
+}
+.custom_radio label::after {
+	display: inline-block;
+	position: absolute;
+	content: " ";
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 7px;
+	margin-left: -20px;
+	border-radius: 50%;
+	background-color: #555555;
+	-webkit-transform: scale(0, 0);
+	-ms-transform: scale(0, 0);
+	-o-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.custom_radio input[type="radio"] {
+	opacity: 0;
+	z-index: 1;
+}
+
+.custom_radio input[type="radio"]:checked + label::after {
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+.custom_radio input[type="radio"]:disabled + label {
+	opacity: 0.65;
+}
+.custom_radio input[type="radio"]:disabled + label::before {
+	cursor: not-allowed;
+}
+.custom_radio.radio-inline {
+	margin-top: 0;
+}
+
+.custom_radio_primary input[type="radio"] + label::after {
+	background-color: #242e41;
+}
+.custom_radio_primary input[type="radio"]:checked + label::before {
+	border-color: #242e41;
+	background-color: #242e41;
+}
+.custom_radio_primary input[type="radio"]:checked + label::after {
+	background-color: #fff;
+}
+
 /* dashboard - end */
 
 /* board - start */

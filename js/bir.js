@@ -92,3 +92,11 @@ function addWhereFilter() {
 function removeWhereFilter() {
 	document.getElementById("addWhereFilter").classList.add("d-none");
 }
+
+function handleModalSearch() {
+	document.getElementById("modalEmpty").classList.add("d-none");
+	document.getElementById("modalData").classList.remove("d-none");
+	document
+		.getElementById("createReport")
+		.classList.remove("modal_save_btn_dis");
+}
