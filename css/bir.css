@@ -1186,6 +1186,7 @@ body {
 	color: #6d7480;
 	white-space: nowrap;
 	border: 0px;
+	padding: 0px;
 }
 .modal_data_table tbody tr {
 	background: #ffffff;
@@ -1199,10 +1200,10 @@ body {
 	border: 0px;
 }
 
-.custom_radio {
+/* .custom_radio {
 	padding-top: 5px;
 	padding-bottom: 5px;
-}
+} */
 
 .modal_col_1 {
 	padding-left: 35px !important;
@@ -1226,8 +1227,8 @@ body {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	width: 24px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
 	left: 0;
 	margin-left: -20px;
 	border: 1px solid #242e41;
@@ -1241,10 +1242,10 @@ body {
 	display: inline-block;
 	position: absolute;
 	content: " ";
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 7px;
+	width: 14px;
+	height: 14px;
+	left: 4px;
+	top: 4px;
 	margin-left: -20px;
 	border-radius: 50%;
 	background-color: #555555;
@@ -1283,10 +1284,11 @@ body {
 }
 .custom_radio_primary input[type="radio"]:checked + label::before {
 	border-color: #242e41;
-	background-color: #242e41;
+	background-color: #fff;
+	border-width: 2px;
 }
 .custom_radio_primary input[type="radio"]:checked + label::after {
-	background-color: #fff;
+	background-color: #242e41;
 }
 
 /* dashboard - end */
