@@ -125,6 +125,10 @@ body {
 	font-size: 20px;
 }
 
+.w_90 {
+	width: 90%;
+}
+
 .templete_layout {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
@@ -1294,6 +1298,189 @@ body {
 	background-color: #242e41;
 }
 
+.modal_sub_heading {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+}
+.modal_label {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	display: block;
+}
+.modal_input {
+	border: 0px;
+	height: 32px;
+	width: 90%;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 31px;
+	color: #6d7480;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px solid #bababa;
+	padding-left: 6px;
+}
+
+.modal_icon_input {
+	position: relative;
+}
+.modal_icon_input i {
+	position: absolute;
+	left: 14px;
+	top: 30px;
+}
+.modal_icon_input input {
+	padding-left: 20px;
+}
+
+.modal_input_disabled {
+	background: #e3e3e3;
+	border-radius: 4px 4px 0px 0px;
+	pointer-events: none;
+}
+
+.modal_input_textarea {
+	border: 0px;
+	height: auto;
+	width: 90%;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #6d7480;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px solid #bababa;
+	resize: none;
+}
+
+.modal_sub_heading_up {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #242e41;
+	padding-left: 3px;
+}
+
+/* for custom select options - start */
+.select_wrapper {
+	position: relative;
+	user-select: none;
+	width: 100%;
+}
+.select_container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.select__trigger {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	border-bottom: 1px solid #a5a5a5;
+	background: #ffffff;
+	color: #999;
+	font-family: "Raleway";
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0px 5px;
+	height: 32px;
+	padding-top: 4px;
+}
+.select__trigger.selected {
+	color: #475765;
+}
+.select__trigger::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	right: 4px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #999;
+}
+.select_custom_options {
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 0;
+	right: 0;
+	transition: all 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 2;
+	list-style-type: none;
+	margin: 0px !important;
+	background: #ffffff;
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+	padding: 3px 0px;
+	max-height: 300px;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.select_custom_options::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+.select_container.open .select_custom_options {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.select_custom_option {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 36px;
+	color: #475765;
+	padding: 0px 10px;
+	margin: 4px 10px;
+	width: auto;
+	border-radius: 10px;
+}
+.select_custom_option:hover {
+	background: #ededed;
+	cursor: pointer;
+}
+.select_custom_option.selected {
+	background: #ededed;
+}
+.select_container_disabled {
+	pointer-events: none;
+}
+.select_container_disabled .select__trigger {
+	background: #e3e3e3;
+	border-radius: 4px 4px 0px 0px;
+	pointer-events: none;
+}
+/* for custom select options - end */
+
+.modal_currency {
+	width: 110px;
+	margin-right: 10px;
+}
 /* dashboard - end */
 
 /* board - start */
