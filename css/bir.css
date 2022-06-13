@@ -1481,6 +1481,61 @@ body {
 	width: 110px;
 	margin-right: 10px;
 }
+.bag_tabs {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+	color: #242e41;
+	width: 52px;
+	height: 30px;
+	border-bottom: 2px solid #e3e3e3;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.bag_tabs_active {
+	border-bottom: 2px solid #35abd9;
+}
+
+.db_bag_tab_heading {
+	background: #f8f8f8;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	padding: 6px 10px;
+}
+.db_bag_tab_heading .modal_sub_heading_up {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.bag_image {
+	padding: 4px;
+	background: #ffffff;
+	box-shadow: 0px 4px 8px rgba(7, 9, 13, 0.08);
+	border-radius: 8px;
+	margin: 5px;
+}
+
+.bag_image img {
+	width: 140px;
+	height: 140px;
+}
+.w-90 {
+	width: 90%;
+}
+.lock_warning {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #c27a08;
+	margin-top: 10px;
+}
+
 /* dashboard - end */
 
 /* board - start */

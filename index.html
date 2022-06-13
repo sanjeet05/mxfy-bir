@@ -1407,6 +1407,10 @@
 										</div>
 									</div>
 									<div id="modal_tab_2_data" class="ps-3">
+										<h5 class="modal_sub_heading mt-2">
+											Missing Bag Information
+										</h5>
+
 										<div class="row mt-3">
 											<div class="col-6">
 												<label class="modal_label">Total Check-in Bags</label>
@@ -1556,6 +1560,205 @@
 											</div>
 										</div>
 
+										<div class="mt-3">
+											<div class="d-flex">
+												<div class="bag_tabs bag_tabs_active">Bag 1</div>
+												<div class="bag_tabs">Bag 2</div>
+											</div>
+										</div>
+
+										<div class="row mt-3">
+											<div class="col-6">
+												<label class="modal_label">Bag Tag Number</label>
+												<input
+													type="text"
+													class="modal_input"
+													placeholder="Bag Tag Number"
+												/>
+											</div>
+											<div class="col-6">
+												<label class="modal_label">Bag Brand Name</label>
+												<input
+													type="text"
+													class="modal_input"
+													placeholder="Bag Brand Name"
+												/>
+											</div>
+										</div>
+
+										<h5 class="modal_sub_heading mt-3">Bag Description</h5>
+										<label class="modal_label">Type of Bag</label>
+
+										<div class="db_tab_heading db_bag_tab_heading mt-2">
+											<div
+												class="d-flex align-items-center"
+												id="modal_bag_tab_1"
+											>
+												<i
+													class="icon-Arrow_drop_right db_tab_heading_icon"
+													onclick="activeModalBagTab(1)"
+												></i>
+												<div
+													class="d-flex align-items-center justify-content-between"
+												>
+													<div class="modal_sub_heading_up">
+														Non Zip Closing Bag
+													</div>
+												</div>
+											</div>
+											<div id="modal_bag_tab_1_data" class="pt-2 d-none">
+												<div class="d-flex">
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="db_tab_heading db_bag_tab_heading">
+											<div
+												class="d-flex align-items-center"
+												id="modal_bag_tab_2"
+											>
+												<i
+													class="icon-Arrow_drop_right db_tab_heading_icon"
+													onclick="activeModalBagTab(2)"
+												></i>
+												<div
+													class="d-flex align-items-center justify-content-between"
+												>
+													<div class="modal_sub_heading_up">
+														Zip Closing Bag
+													</div>
+												</div>
+											</div>
+											<div id="modal_bag_tab_2_data" class="pt-2 d-none">
+												<div class="d-flex">
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="db_tab_heading db_bag_tab_heading">
+											<div
+												class="d-flex align-items-center"
+												id="modal_bag_tab_3"
+											>
+												<i
+													class="icon-Arrow_drop_right db_tab_heading_icon"
+													onclick="activeModalBagTab(3)"
+												></i>
+												<div
+													class="d-flex align-items-center justify-content-between"
+												>
+													<div class="modal_sub_heading_up">
+														Special Container
+													</div>
+												</div>
+											</div>
+											<div id="modal_bag_tab_3_data" class="pt-2 d-none">
+												<div class="d-flex">
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+													<div class="bag_image">
+														<img src="./images/bag_1.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<h5 class="modal_sub_heading mt-3">Color of the Bag</h5>
+										<div class="d-flex mt-3">
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+										</div>
+										<h5 class="modal_sub_heading mt-3">External Features</h5>
+										<div class="d-flex mt-3">
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+										</div>
+
+										<h5 class="modal_sub_heading mt-3">Combination Lock</h5>
+										<div class="row mt-2">
+											<div class="col-6">
+												<label class="modal_label">Combination Lock</label>
+												<input
+													type="text"
+													class="modal_input"
+													placeholder="Enter Combination Lock Number"
+												/>
+												<div class="lock_warning">
+													Enter number only, max 4 (Only if Required)
+												</div>
+											</div>
+											<div class="col-6"></div>
+										</div>
+
+										<h5 class="modal_sub_heading mt-3">Content of Bag</h5>
+										<div class="row mt-3">
+											<div class="col-6">
+												<label class="modal_label">Item(s)</label>
+												<div class="select_wrapper w-90">
+													<div class="select_container">
+														<div class="select__trigger">
+															<span>Item(s)</span>
+														</div>
+														<ul class="select_custom_options">
+															<li
+																class="select_custom_option"
+																data-value="Item-1"
+															>
+																Item-1
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-6"></div>
+										</div>
+										<div class="row mt-3">
+											<div class="col-6">
+												<label class="modal_label">Description</label>
+												<textarea
+													rows="2"
+													class="modal_input_textarea"
+													placeholder="Description"
+													value=""
+												>
+												</textarea>
+											</div>
+											<div class="col-6"></div>
+										</div>
+
+										<div class="row mt-3">
+											<div class="col-6">
+												<label class="modal_label">Files & Photos</label>
+												<button
+													type="button"
+													class="btn reset_btn modal_save_btn mt-3"
+												>
+													Add Attachment
+													<i class="icon-Arrow_drop_up icon_10 icon_white"></i>
+												</button>
+											</div>
+											<div class="col-6"></div>
+										</div>
 									</div>
 
 									<div
@@ -1625,7 +1828,7 @@
 											</div>
 											<div class="row">
 												<div class="col-3">
-													<div class="select_wrapper">
+													<div class="select_wrapper w-90">
 														<div class="select_container">
 															<div class="select__trigger">
 																<span>Airline Code</span>
@@ -1658,7 +1861,7 @@
 											</div>
 											<div class="row mt-2">
 												<div class="col-3">
-													<div class="select_wrapper">
+													<div class="select_wrapper w-90">
 														<div class="select_container">
 															<div class="select__trigger">
 																<span>Airline Code</span>
@@ -1712,7 +1915,7 @@
 										<div class="row mt-3">
 											<div class="col-6">
 												<label class="modal_label">Department</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Select Department</span>
@@ -1730,7 +1933,7 @@
 											</div>
 											<div class="col-6">
 												<label class="modal_label">Category</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Select Category</span>
@@ -1751,7 +1954,7 @@
 										<div class="row mt-3">
 											<div class="col-6">
 												<label class="modal_label">Resolution Code</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Select Resolution Code</span>
@@ -1867,7 +2070,7 @@
 										<div class="row mt_10">
 											<div class="col-6">
 												<label class="modal_label">Agent Airport</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Agent Airport</span>
@@ -1885,7 +2088,7 @@
 											</div>
 											<div class="col-6">
 												<label class="modal_label">Agent Department</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Agent Department</span>
@@ -1922,7 +2125,7 @@
 										<div class="row mt-3">
 											<div class="col-6">
 												<label class="modal_label">Status</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div
 														class="select_container select_container_disabled"
 													>
@@ -1953,7 +2156,7 @@
 										<div class="row mt_10">
 											<div class="col-6">
 												<label class="modal_label">Case Origin</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Case Origin</span>
@@ -1971,7 +2174,7 @@
 											</div>
 											<div class="col-6">
 												<label class="modal_label">Type</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Type</span>
@@ -2000,7 +2203,7 @@
 											</div>
 											<div class="col-6">
 												<label class="modal_label">Priority</label>
-												<div class="select_wrapper">
+												<div class="select_wrapper w-90">
 													<div class="select_container">
 														<div class="select__trigger">
 															<span>Priority</span>

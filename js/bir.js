@@ -190,3 +190,22 @@ function activeModalDashboardTab(tabNumber) {
 		document.getElementById("modal_tab_7_data").classList.toggle("d-none");
 	}
 }
+
+function activeModalBagTab(tabNumber) {
+	if (tabNumber === 1) {
+		document
+			.getElementById("modal_bag_tab_1")
+			.classList.toggle("db_tab_heading_active");
+		document.getElementById("modal_bag_tab_1_data").classList.toggle("d-none");
+	} else if (tabNumber === 2) {
+		document
+			.getElementById("modal_bag_tab_2")
+			.classList.toggle("db_tab_heading_active");
+		document.getElementById("modal_bag_tab_2_data").classList.toggle("d-none");
+	} else if (tabNumber === 3) {
+		document
+			.getElementById("modal_bag_tab_3")
+			.classList.toggle("db_tab_heading_active");
+		document.getElementById("modal_bag_tab_3_data").classList.toggle("d-none");
+	}
+}
