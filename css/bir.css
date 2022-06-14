@@ -1538,6 +1538,40 @@ body {
 
 /* dashboard - end */
 
+.report_layout {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: 65px 1fr 65px;
+	grid-template-areas:
+		"report_layout_header report_layout_header report_layout_header"
+		"report_layout_left report_layout_content report_layout_right"
+		"report_layout_footer report_layout_footer report_layout_footer";
+	height: auto;
+	background: #f8f8f8;
+}
+
+.report_layout_item_1 {
+	grid-area: report_layout_left;
+	width: 0px;
+}
+.report_layout_item_2 {
+	grid-area: report_layout_header;
+	width: 100%;
+}
+.report_layout_item_3 {
+	grid-area: report_layout_content;
+	width: 100%;
+}
+.report_layout_item_4 {
+	grid-area: report_layout_right;
+	width: 350px;
+	position: relative;
+}
+.report_layout_item_5 {
+	grid-area: report_layout_footer;
+	width: 100%;
+}
+
 .report_top_header {
 	position: absolute;
 	height: 64px;
@@ -1601,7 +1635,7 @@ body {
 }
 
 .report_body {
-	padding-top: 65px;
+	padding-left: 10px;
 	background: #f8f8f8;
 }
 .report_body_left {
@@ -1612,9 +1646,119 @@ body {
 	margin-left: 30px;
 	margin-bottom: 80px;
 }
-.report_body_right {
-	padding-top: 30px;
+.no_chat {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #6d7480;
+	text-align: center;
+}
+.report_body_right_chat {
 	background: #f8f8f8;
+	border-left: 1px solid #d1d1d1;
+}
+.report_body_right_chat_body {
+	background: #f8f8f8;
+	position: sticky;
+	height: calc(100vh - 130px);
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.left_chat {
+	padding: 10px;
+}
+.right_chat {
+	padding: 10px;
+}
+.chat_name {
+	background: #35abd9;
+	height: 32px;
+	width: 32px;
+	border-radius: 16px;
+	text-align: center;
+
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 32px;
+	color: #ffffff;
+}
+.chat_text_1 {
+	padding: 8px;
+	background: #073450;
+	border-radius: 8px;
+
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-left: 10px;
+	max-width: 220px;
+	position: relative;
+}
+.chat_text_1::before {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border: 10px solid;
+	border-color: transparent #073450 transparent transparent;
+	left: -18px;
+	top: 23%;
+}
+
+.chat_text_2 {
+	padding: 8px;
+	background: #d3d5d9;
+	border-radius: 8px;
+
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	margin-right: 10px;
+	max-width: 220px;
+	position: relative;
+}
+
+.chat_text_2::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border: 10px solid;
+	border-color: transparent transparent transparent #d3d5d9;
+	right: -18px;
+	top: 37%;
+}
+
+.chat_top_border {
+	border-top: 1px solid #bababa;
+	background: #ffffff;
+}
+.chat_input {
+	border: 0px;
+	height: 64px;
+	width: 100%;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 31px;
+	color: #6d7480;
+	outline: none;
+	box-shadow: none;
+	padding-left: 6px;
 }
 
 .report_footer {
