@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+		/>
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<!-- icons -->
+		<link rel="stylesheet" href="lib/icomoon_v2/style.css" />
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/bir.css" />
+
+		<title>Maxify Digital - BIR</title>
+	</head>
+	<body>
+		<section class="report_top_header">
+			<div class="d-flex align-items-center justify-content-between h-100">
+				<div class="d-flex align-items-center">
+					<i class="icon-Bag-Missing icon_14"></i>
+					<h5 class="report_header_title">Missing Baggage Report</h5>
+					<div class="report_header_title_status">OPEN</div>
+				</div>
+				<div class="d-flex align-items-center">
+					<div class="report_header_logged">
+						Logged In Airport Location: DEL
+					</div>
+					<div class="report_header_logged_time">00:50:26</div>
+					<i class="icon-Bag-Missing icon_16 mr_15"></i>
+					<i class="icon-Bag-Missing icon_16 mr_15"></i>
+					<i class="icon-Eye_light icon_16 mr_15"></i>
+					<i class="icon-In_light-Stroke icon_16 mr_15"></i>
+					<i class="icon-Close_round_light-Stroke icon_16"></i>
+				</div>
+			</div>
+		</section>
+
+		<section class="report_body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-9">
+						<div class="report_body_left">
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_1"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(1)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">Passenger Details</div>
+								</div>
+							</div>
+							<div id="modal_tab_1_data" class="ps-3">
+								<h5 class="modal_sub_heading mt-2">
+									Passenger’s Contact Details
+								</h5>
+								<div class="row">
+									<div class="col-6">
+										<label class="modal_label">First Name</label>
+										<input type="text" class="modal_input" value="Arvind" />
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Last Name</label>
+										<input type="text" class="modal_input" value="Desai" />
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Email</label>
+										<i class="icon-E-mail_light icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											value="arvind007@gmail.com"
+										/>
+									</div>
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Alternate Email</label>
+										<i class="icon-E-mail_light icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Alternate Email"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Mobile Number</label>
+										<i class="icon-E-mail_light icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Mobile Number"
+										/>
+									</div>
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Alternate Mobile Number</label>
+										<i class="icon-E-mail_light icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Alternate Mobile Number"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">PNR</label>
+										<input type="text" class="modal_input" placeholder="PNR" />
+									</div>
+									<div class="col-6"></div>
+								</div>
+
+								<h5 class="modal_sub_heading mt_15">
+									Passenger’s Permanent Address Information
+								</h5>
+								<div class="row">
+									<div class="col-6">
+										<label class="modal_label">Address Line 1</label>
+										<textarea
+											rows="2"
+											class="modal_input_textarea"
+											placeholder="256, 10th Cross, 1st Main,"
+										></textarea>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Address Line 2</label>
+										<textarea
+											rows="2"
+											class="modal_input_textarea"
+											placeholder="Whitefield, Near Assam Bhavan"
+										></textarea>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">PIN #</label>
+										<input type="text" class="modal_input" value="100002" />
+									</div>
+									<div class="col-6">
+										<label class="modal_label">City</label>
+										<input
+											type="text"
+											class="modal_input modal_input_disabled"
+											value="Bengaluru"
+										/>
+									</div>
+								</div>
+
+								<h5 class="modal_sub_heading mt_15">
+									Passenger’s Temporary Address Information
+								</h5>
+								<div class="d-flex mt_10">
+									<p class="modal_label">
+										Same as Permanent Address Information ?
+									</p>
+									<label class="switch cp ms-3">
+										<input class="switch_input" type="checkbox" />
+										<span class="switch_slider"></span>
+									</label>
+								</div>
+
+								<h5 class="modal_sub_heading mt_15">Select Delivery Address</h5>
+								<p class="modal_label mt_10">
+									Select the current delivery address
+								</p>
+								<div class="d-flex">
+									<div class="custom_radio custom_radio_primary">
+										<input
+											type="radio"
+											name="delivery_g_1"
+											id="delivery_rd_1"
+										/>
+										<label for="delivery_rd_1">Permanent Address</label>
+									</div>
+									<div class="custom_radio custom_radio_primary ml_10">
+										<input
+											type="radio"
+											name="delivery_g_1"
+											id="delivery_rd_2"
+										/>
+										<label for="delivery_rd_2">Temporary Address</label>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_2"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(2)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">Bag Details</div>
+								</div>
+							</div>
+							<div id="modal_tab_2_data" class="ps-3">
+								<h5 class="modal_sub_heading mt-2">Missing Bag Information</h5>
+
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Total Check-in Bags</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Total No. of Check-in Bags"
+										/>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Total Missing Bags</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Total No. of Missing Bags"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Total Bag Weight</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Total Bag Weight"
+										/>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Missing Bag Weight</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Missing Bag Weight"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Delivered Bag Weight</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Delivered Bag Weight"
+										/>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Bag Last Seen</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Bag Last Seen"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label"
+											>Advance Payment to PAX at APT</label
+										>
+										<div class="d-flex w_90">
+											<div class="select_wrapper modal_currency">
+												<div class="select_container">
+													<div class="select__trigger">
+														<span>Currency</span>
+													</div>
+													<ul class="select_custom_options">
+														<li class="select_custom_option" data-value="INR">
+															INR
+														</li>
+													</ul>
+												</div>
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="Amount"
+											/>
+										</div>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Insurance</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Insurance"
+										/>
+									</div>
+								</div>
+								<div class="mt-3">
+									<div class="d-flex">
+										<div class="custom_radio custom_radio_primary">
+											<input type="radio" name="bag_g_1" id="bag_rd_1" />
+											<label for="bag_rd_1">Domestic</label>
+										</div>
+										<div class="custom_radio custom_radio_primary ml_10">
+											<input type="radio" name="bag_g_1" id="bag_rd_2" />
+											<label for="bag_rd_2">International</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="col-12">
+										<label class="modal_label">Bag Routing</label>
+										<div class="d-flex">
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+										</div>
+									</div>
+								</div>
+
+								<div class="mt-3">
+									<div class="d-flex">
+										<div class="bag_tabs bag_tabs_active">Bag 1</div>
+										<div class="bag_tabs">Bag 2</div>
+									</div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Bag Tag Number</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Bag Tag Number"
+										/>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Bag Brand Name</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Bag Brand Name"
+										/>
+									</div>
+								</div>
+
+								<h5 class="modal_sub_heading mt-3">Bag Description</h5>
+								<label class="modal_label">Type of Bag</label>
+
+								<div class="db_tab_heading db_bag_tab_heading mt-2">
+									<div class="d-flex align-items-center" id="modal_bag_tab_1">
+										<i
+											class="icon-Arrow_drop_right db_tab_heading_icon"
+											onclick="activeModalBagTab(1)"
+										></i>
+										<div
+											class="d-flex align-items-center justify-content-between"
+										>
+											<div class="modal_sub_heading_up">
+												Non Zip Closing Bag
+											</div>
+										</div>
+									</div>
+									<div id="modal_bag_tab_1_data" class="pt-2 d-none">
+										<div class="d-flex">
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="db_tab_heading db_bag_tab_heading">
+									<div class="d-flex align-items-center" id="modal_bag_tab_2">
+										<i
+											class="icon-Arrow_drop_right db_tab_heading_icon"
+											onclick="activeModalBagTab(2)"
+										></i>
+										<div
+											class="d-flex align-items-center justify-content-between"
+										>
+											<div class="modal_sub_heading_up">Zip Closing Bag</div>
+										</div>
+									</div>
+									<div id="modal_bag_tab_2_data" class="pt-2 d-none">
+										<div class="d-flex">
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="db_tab_heading db_bag_tab_heading">
+									<div class="d-flex align-items-center" id="modal_bag_tab_3">
+										<i
+											class="icon-Arrow_drop_right db_tab_heading_icon"
+											onclick="activeModalBagTab(3)"
+										></i>
+										<div
+											class="d-flex align-items-center justify-content-between"
+										>
+											<div class="modal_sub_heading_up">Special Container</div>
+										</div>
+									</div>
+									<div id="modal_bag_tab_3_data" class="pt-2 d-none">
+										<div class="d-flex">
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+											<div class="bag_image">
+												<img src="./images/bag_1.png" />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<h5 class="modal_sub_heading mt-3">Color of the Bag</h5>
+								<div class="d-flex mt-3">
+									<div class="bag_image">
+										<img src="./images/bag_1.png" />
+									</div>
+									<div class="bag_image">
+										<img src="./images/bag_1.png" />
+									</div>
+								</div>
+								<h5 class="modal_sub_heading mt-3">External Features</h5>
+								<div class="d-flex mt-3">
+									<div class="bag_image">
+										<img src="./images/bag_1.png" />
+									</div>
+									<div class="bag_image">
+										<img src="./images/bag_1.png" />
+									</div>
+								</div>
+
+								<h5 class="modal_sub_heading mt-3">Combination Lock</h5>
+								<div class="row mt-2">
+									<div class="col-6">
+										<label class="modal_label">Combination Lock</label>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Enter Combination Lock Number"
+										/>
+										<div class="lock_warning">
+											Enter number only, max 4 (Only if Required)
+										</div>
+									</div>
+									<div class="col-6"></div>
+								</div>
+
+								<h5 class="modal_sub_heading mt-3">Content of Bag</h5>
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Item(s)</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Item(s)</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Item-1">
+														Item-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6"></div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Description</label>
+										<textarea
+											rows="2"
+											class="modal_input_textarea"
+											placeholder="Description"
+										></textarea>
+									</div>
+									<div class="col-6"></div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Files & Photos</label>
+										<button
+											type="button"
+											class="btn reset_btn modal_save_btn mt-3"
+										>
+											Add Attachment
+											<i class="icon-Arrow_drop_up icon_10 icon_white"></i>
+										</button>
+									</div>
+									<div class="col-6"></div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_3"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(3)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">
+										Passenger Journey Information
+									</div>
+								</div>
+							</div>
+							<div id="modal_tab_3_data" class="ps-3">
+								<div class="row mt_10">
+									<div class="col-12">
+										<label class="modal_label">Routing</label>
+										<div class="d-flex">
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+											<div class="modal_label align-self-center ps-1 pe-1">
+												/
+											</div>
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="APT"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-3">
+									<div class="col-12">
+										<label class="modal_label">Flight and Date</label>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<div class="select_wrapper w-90">
+												<div class="select_container">
+													<div class="select__trigger">
+														<span>Airline Code</span>
+													</div>
+													<ul class="select_custom_options">
+														<li class="select_custom_option" data-value="A-001">
+															A-001
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="Flight No."
+											/>
+										</div>
+										<div class="col-3">
+											<input
+												type="date"
+												class="modal_input"
+												placeholder="Date"
+											/>
+										</div>
+									</div>
+									<div class="row mt-2">
+										<div class="col-3">
+											<div class="select_wrapper w-90">
+												<div class="select_container">
+													<div class="select__trigger">
+														<span>Airline Code</span>
+													</div>
+													<ul class="select_custom_options">
+														<li class="select_custom_option" data-value="A-001">
+															A-001
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<input
+												type="text"
+												class="modal_input"
+												placeholder="Flight No."
+											/>
+										</div>
+										<div class="col-3">
+											<input
+												type="date"
+												class="modal_input"
+												placeholder="Date"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_4"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(4)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">
+										Department / Category Information
+									</div>
+								</div>
+							</div>
+							<div id="modal_tab_4_data" class="ps-3">
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Department</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Department</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Dep-1">
+														Dep-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Category</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Category</span>
+												</div>
+												<ul class="select_custom_options">
+													<li
+														class="select_custom_option"
+														data-value="Category-1"
+													>
+														Category-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Resolution Code</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Select Resolution Code</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Code-1">
+														Code-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6"></div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_5"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(5)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">Files & Photos</div>
+								</div>
+							</div>
+							<div id="modal_tab_5_data" class="ps-3">
+								<div class="row mt-3">
+									<div class="col-12">
+										<button type="button" class="btn reset_btn modal_save_btn">
+											Add Attachment
+											<i class="icon-Arrow_drop_up icon_10 icon_white"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_6"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(6)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">Others</div>
+								</div>
+							</div>
+							<div id="modal_tab_6_data" class="ps-3">
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Report Raised at Airport</label>
+										<input type="text" class="modal_input" value="DEL" />
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Remarks</label>
+										<textarea
+											rows="2"
+											class="modal_input_textarea"
+											placeholder="Remarks"
+										></textarea>
+									</div>
+									<div class="col-6">
+										<label class="modal_label"
+											>Email Notification to be sent to</label
+										>
+										<textarea
+											rows="2"
+											class="modal_input_textarea"
+											placeholder="Notification to be sent to"
+										></textarea>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Name</label>
+										<input type="text" class="modal_input" placeholder="Name" />
+									</div>
+									<div class="col-6">
+										<label class="modal_label">ID</label>
+										<input type="text" class="modal_input" placeholder="ID" />
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Agent Airport</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Agent Airport</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Agent-1">
+														Agent-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Agent Department</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Agent Department</span>
+												</div>
+												<ul class="select_custom_options">
+													<li
+														class="select_custom_option"
+														data-value="Department-1"
+													>
+														Department-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="d-flex align-items-center db_tab_heading"
+								id="modal_tab_7"
+							>
+								<i
+									class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+									onclick="activeModalDashboardTab(7)"
+								></i>
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="modal_sub_heading_up">Report Details</div>
+								</div>
+							</div>
+							<div id="modal_tab_7_data" class="ps-3">
+								<div class="row mt-3">
+									<div class="col-6">
+										<label class="modal_label">Status</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container select_container_disabled">
+												<div class="select__trigger">
+													<span>Case Origin</span>
+												</div>
+												<ul class="select_custom_options">
+													<li
+														class="select_custom_option"
+														data-value="Origin-1"
+													>
+														Origin-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Parent Case</label>
+										<i class="icon-Search_alt_light-Stroke icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Search Parent Case"
+										/>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6">
+										<label class="modal_label">Case Origin</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Case Origin</span>
+												</div>
+												<ul class="select_custom_options">
+													<li
+														class="select_custom_option"
+														data-value="Origin-1"
+													>
+														Origin-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Type</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Type</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Type-1">
+														Type-1
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row mt_10">
+									<div class="col-6 modal_icon_input">
+										<label class="modal_label">Attribute to Airport</label>
+										<i class="icon-Search_alt_light-Stroke icon_14"></i>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Search Airport"
+										/>
+									</div>
+									<div class="col-6">
+										<label class="modal_label">Priority</label>
+										<div class="select_wrapper w-90">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Priority</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="Heigh">
+														Heigh
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="report_body_right">Chat bot</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="report_footer">
+			<div class="d-flex align-items-center justify-content-between h-100">
+				<div class="d-flex align-items-center">
+					<div
+						class="report_footer_pill"
+						data-bs-target="#closeAHL"
+						data-bs-toggle="modal"
+					>
+						Close AHL
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#openDPR"
+						data-bs-toggle="modal"
+					>
+						Close AHL Open DPR
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#openDPR"
+						data-bs-toggle="modal"
+					>
+						Close AHL Open PIL
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#requestOHD"
+						data-bs-toggle="modal"
+					>
+						Request OHD
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#closeOHD"
+						data-bs-toggle="modal"
+					>
+						Suspend OHD
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#addDeliveryDetails"
+						data-bs-toggle="modal"
+					>
+						Add Delivery Detail
+					</div>
+					<div
+						class="report_footer_pill"
+						data-bs-target="#traceAHL"
+						data-bs-toggle="modal"
+					>
+						Trace AHL
+					</div>
+				</div>
+				<div class="d-flex align-items-center">
+					<button type="button" class="btn reset_btn modal_cancel_btn">
+						Cancel
+					</button>
+					<button type="button" class="btn reset_btn modal_save_btn">
+						Submit
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- modals -->
+		<div class="modal fade" id="closeAHL" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Close AHL</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row">
+								<div class="col-6">
+									<label class="modal_label">First Name</label>
+									<input type="text" class="modal_input" value="Arvind" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Last Name</label>
+									<input type="text" class="modal_input" value="Desai" />
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label"
+										>Advance Payment to PAX at APT</label
+									>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Delivery Charges</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label"
+										>Compensation Paid for Insurance by CR</label
+									>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Default Station</label>
+									<i class="icon-Search_alt_light-Stroke icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Default Station"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Claims Form Given to PAX</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Claims Form Given to PAX</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Date Bag Received</label>
+									<input type="date" class="modal_input" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Date Bag Delivered</label>
+									<input type="date" class="modal_input" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Closure Reason</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Closure Reason</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Name</label>
+									<input type="text" class="modal_input" placeholder="Name" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">ID</label>
+									<input type="text" class="modal_input" placeholder="ID" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Agent Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Agent Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+								<div class="col-6"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Close Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="requestOHD" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Request OHD</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row">
+								<div class="col-6">
+									<label class="modal_label">OHD Number</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="OHD Number"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Select Bag</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Select Bag</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Last Name</label>
+									<input type="text" class="modal_input" value="Desai" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">First Name</label>
+									<input type="text" class="modal_input" value="Arvind" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Requested by Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Requested by Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Forward Bag to Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Forward Bag to Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-12">
+									<label class="modal_label">Flight Forward Route</label>
+									<div class="d-flex">
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Name</label>
+									<input type="text" class="modal_input" placeholder="Name" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">ID</label>
+									<input type="text" class="modal_input" placeholder="ID" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Agent Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Agent Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label"
+										>Email Notification to be sent to</label
+									>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Email Notification to be sent to"
+									></textarea>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Request Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="closeOHD" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Close OHD</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row">
+								<div class="col-6">
+									<label class="modal_label">AHL Number of the Bag</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="AHL Number of the Bag"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Rush Tag Number</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Rush Tag Number"
+									/>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Last Name</label>
+									<input type="text" class="modal_input" value="Desai" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">First Name</label>
+									<input type="text" class="modal_input" value="Arvind" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Requested by Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Requested by Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Forward Bag to Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Forward Bag to Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-12">
+									<label class="modal_label">Flight Forward Route</label>
+									<div class="d-flex">
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+										<div class="modal_label align-self-center ps-1 pe-1">/</div>
+										<input type="text" class="modal_input" placeholder="APT" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Name</label>
+									<input type="text" class="modal_input" placeholder="Name" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">ID</label>
+									<input type="text" class="modal_input" placeholder="ID" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Agent Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Agent Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Warehouse/Storage Charges</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+								<div class="col-6"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Close Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="openDPR" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Open DPR</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row">
+								<div class="col-6">
+									<label class="modal_label">Title</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Mr.</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Mr.">
+													Mr.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">First Name</label>
+									<input type="text" class="modal_input" value="Arvind" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Last Name</label>
+									<input type="text" class="modal_input" value="Desai" />
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Closure Reason</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Repair Charges</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Misc. Charges</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Default Station</label>
+									<i class="icon-Search_alt_light-Stroke icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Default Station"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Name</label>
+									<input type="text" class="modal_input" placeholder="Name" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">ID</label>
+									<input type="text" class="modal_input" placeholder="ID" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Agent Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Agent Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+								<div class="col-6"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Close Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal fade"
+			id="addDeliveryDetails"
+			tabindex="-1"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Add Delivery Details</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row">
+								<div class="col-6">
+									<label class="modal_label">AHL Number of the Bag</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="AHL Number of the Bag"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Rush Tag Number</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Rush Tag Number"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Color Code</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Color Code</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Bag Brand Name</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Bag Brand Name"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Status</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Status</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Title</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Mr.</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Mr.">
+													Mr.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Last Name</label>
+									<input type="text" class="modal_input" value="Desai" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">First Name</label>
+									<input type="text" class="modal_input" value="Arvind" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+								<div class="col-6"></div>
+							</div>
+
+							<h5 class="modal_sub_heading mt_15">Select Delivery Address</h5>
+							<p class="modal_label mt_10">
+								Select the current delivery address
+							</p>
+							<div class="d-flex">
+								<div class="custom_radio custom_radio_primary">
+									<input
+										type="radio"
+										name="delivery_g_11"
+										id="delivery_rd_11"
+									/>
+									<label for="delivery_rd_11">Permanent Address</label>
+								</div>
+								<div class="custom_radio custom_radio_primary ml_10">
+									<input
+										type="radio"
+										name="delivery_g_11"
+										id="delivery_rd_22"
+									/>
+									<label for="delivery_rd_22">Temporary Address</label>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Address Line 1</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="256, 10th Cross, 1st Main,"
+									></textarea>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Address Line 2</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Whitefield, Near Assam Bhavan"
+									></textarea>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">PIN #</label>
+									<input type="text" class="modal_input" value="100002" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">City</label>
+									<input
+										type="text"
+										class="modal_input modal_input_disabled"
+										value="Bengaluru"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">State</label>
+									<input
+										type="text"
+										class="modal_input modal_input_disabled"
+										value="Karnataka"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Country</label>
+									<input
+										type="text"
+										class="modal_input modal_input_disabled"
+										value="India"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Email</label>
+									<i class="icon-E-mail_light icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										value="arvind007@gmail.com"
+									/>
+								</div>
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Alternate Email</label>
+									<i class="icon-E-mail_light icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Alternate Email"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Mobile Number</label>
+									<i class="icon-E-mail_light icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Mobile Number"
+									/>
+								</div>
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Alternate Mobile Number</label>
+									<i class="icon-E-mail_light icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Alternate Mobile Number"
+									/>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6 modal_icon_input">
+									<label class="modal_label">Courier Mobile Number</label>
+									<i class="icon-E-mail_light icon_14"></i>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Courier Mobile Number"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Expected Delivery Date</label>
+									<input type="date" class="modal_input" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Courier Name</label>
+									<input
+										type="text"
+										class="modal_input"
+										placeholder="Courier Name"
+									/>
+								</div>
+								<div class="col-6">
+									<label class="modal_label"
+										>Courier Package Dispatch Date</label
+									>
+									<input type="date" class="modal_input" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Delivery Charges</label>
+									<div class="d-flex w_90">
+										<div class="select_wrapper modal_currency">
+											<div class="select_container">
+												<div class="select__trigger">
+													<span>Currency</span>
+												</div>
+												<ul class="select_custom_options">
+													<li class="select_custom_option" data-value="INR">
+														INR
+													</li>
+												</ul>
+											</div>
+										</div>
+										<input
+											type="text"
+											class="modal_input"
+											placeholder="Amount"
+										/>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="d-flex">
+										<p class="modal_label">
+											Confirmed Delivery Address with PAX?
+										</p>
+										<label class="switch cp ms-3">
+											<input class="switch_input" type="checkbox" />
+											<span class="switch_slider"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Name</label>
+									<input type="text" class="modal_input" placeholder="Name" />
+								</div>
+								<div class="col-6">
+									<label class="modal_label">ID</label>
+									<input type="text" class="modal_input" placeholder="ID" />
+								</div>
+							</div>
+
+							<div class="row mt-3">
+								<div class="col-6">
+									<label class="modal_label">Agent Airport</label>
+									<div class="select_wrapper w-90">
+										<div class="select_container">
+											<div class="select__trigger">
+												<span>Agent Airport</span>
+											</div>
+											<ul class="select_custom_options">
+												<li class="select_custom_option" data-value="Item-1">
+													Item-1
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label class="modal_label">Remarks</label>
+									<textarea
+										rows="2"
+										class="modal_input_textarea"
+										placeholder="Remarks"
+									></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="traceAHL" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="d-flex w-100 justify-content-between modal_heading">
+							<h5 class="modal-title">Suspend AHL</h5>
+							<label>AHL No.: DELMX2100023M</label>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body report_modal_body">
+							<div class="row mt-3">
+								<div class="col-6">
+									<div class="d-flex">
+										<p class="modal_label">Suspend Complete AHL Report</p>
+										<label class="switch cp ms-3">
+											<input class="switch_input" type="checkbox" />
+											<span class="switch_slider"></span>
+										</label>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							</div>
+
+							<h5 class="modal_sub_heading mt_10">Select Individually:</h5>
+
+							<div class="row mt-3">
+								<div class="col-4 report_ahl_b_right">
+									<div class="d-flex justify-content-between">
+										<label class="report_ahl_heading">COLOR TYPE</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">BK02CVFR</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">BK02CCE3</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">BK02CCE4</label>
+										<input type="checkbox" />
+									</div>
+								</div>
+								<div class="col-4 report_ahl_b_right">
+									<div class="d-flex justify-content-between">
+										<label class="report_ahl_heading">BAG TAG NUMBER</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">08790223482</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">08790223483</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">08790223484</label>
+										<input type="checkbox" />
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="d-flex justify-content-between">
+										<label class="report_ahl_heading">BAG BRAND NAME</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">Adidas</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">Gucci</label>
+										<input type="checkbox" />
+									</div>
+									<div class="d-flex justify-content-between mt_10">
+										<label class="report_ahl_text">Guccii</label>
+										<input type="checkbox" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Suspend Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- custom js -->
+		<script src="js/bir.js"></script>
+	</body>
+</html>
