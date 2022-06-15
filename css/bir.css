@@ -1748,18 +1748,19 @@ body {
 	background: #ffffff;
 }
 .chat_input {
+	padding-top: 4px;
 	border: 0px;
-	height: 64px;
+	height: 60px;
 	width: 100%;
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 31px;
 	color: #6d7480;
 	outline: none;
 	box-shadow: none;
-	padding-left: 6px;
+	resize: none;
+	padding-left: 10px;
 }
 
 .report_footer {
@@ -1820,6 +1821,115 @@ body {
 	color: #000000;
 }
 
+.chat_heading {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242e41;
+}
+.chat_card {
+	background: #ffffff;
+	border: 1px solid #d3d5d9;
+	border-radius: 4px;
+	border-left: 4px solid #2c8fb5;
+	padding: 10px 14px;
+	margin-left: 16px;
+	width: 100%;
+}
+.chat_card_item_1 h4 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #242e41;
+	margin: 0px;
+}
+
+.chat_card_item_1 label {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+	margin-left: 10px;
+}
+
+.chat_card_item_2 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+}
+
+.chat_card_item_3 {
+	padding-top: 10px;
+}
+.chat_card_item_3 h4 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #35abd9;
+	margin: 0px;
+	padding-right: 10px;
+}
+
+.chat_card_item_3 label {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+}
+.chat_body_reply {
+	border: 1px solid #d3d5d9;
+	border-radius: 0px 0px 4px 4px;
+	padding: 20px;
+	margin-left: 46px;
+}
+.chat_body_reply .chat_card {
+	background: #f8f8f8;
+	border: 1px solid #d3d5d9;
+}
+.chat_footer {
+	position: absolute;
+	height: 65px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background: #ffffff;
+	border-top: 1px solid #bababa;
+}
+.chat_footer_input {
+	padding-top: 4px;
+	border: 0px;
+	height: 60px;
+	width: 100%;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #6d7480;
+	outline: none;
+	box-shadow: none;
+	resize: none;
+	padding-left: 10px;
+}
+.chat_footer_2 {
+	background: #ffffff;
+	border-top: 1px solid #bababa;
+}
 /* board - start */
 
 .board_width {

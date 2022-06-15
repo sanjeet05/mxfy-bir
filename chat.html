@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+		/>
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<!-- icons -->
+		<link rel="stylesheet" href="lib/icomoon_v2/style.css" />
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/bir.css" />
+
+		<title>Maxify Digital - BIR</title>
+	</head>
+	<body onload="dashboardInit()">
+		<div class="templete_layout">
+			<!-- left panel -->
+			<div class="templete_layout_item_1 templete_layout_item_left">
+				<div class="d-flex flex-column w-100 h-100">
+					<div class="d-flex justify-content-center left_panel_top">
+						<img src="images/logo_v1.png" class="logo logo_big" alt="" />
+						<img
+							src="images/logo_v1_small.png"
+							class="logo logo_small"
+							alt=""
+						/>
+						<i
+							class="icon-Expand_left_double_light-Stroke icon_white logo_left_arrow"
+							onclick="toggleLeftSidebar(event)"
+						></i>
+					</div>
+					<div class="d-flex justify-content-start">
+						<ul class="left_menu">
+							<li class="active_menu">
+								<a href="./index.html" class="text_decoration_none d-flex">
+									<img src="images/dashboard.svg" alt="" />
+									<p>Dashboard</p>
+								</a>
+							</li>
+							<li class="">
+								<a
+									href="#reportSubMenu"
+									data-bs-toggle="collapse"
+									class="text_decoration_none d-flex align-items-center justify-content-between"
+								>
+									<div class="d-flex">
+										<img src="images/reports.svg" alt="" />
+										<p>Reports</p>
+									</div>
+									<i
+										class="icon-Arrow_drop_down icon_10 icon_white ms-2 pull-right"
+									></i>
+								</a>
+								<ul class="left_menu collapse" id="reportSubMenu">
+									<li>
+										<a
+											href="./baggage_report.html"
+											class="text_decoration_none d-flex"
+										>
+											<img src="images/dashboard.svg" alt="" />
+											<p>Missing</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/reports.svg" alt="" />
+											<p>Damaged</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/trace_baggage.svg" alt="" />
+											<p>Pilferege</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/trace_baggage.svg" alt="" />
+											<p>Unclaimed/Hold</p>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#" class="text_decoration_none d-flex">
+									<img src="images/trace_baggage.svg" alt="" />
+									<p>Trace Baggage</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d-flex align-items-end h-100">
+						<div class="left_bottom d-flex align-items-center">
+							<div class="left_bottom_name_initials">DC</div>
+							<div class="left_bottom_name">Deepankur Chawla</div>
+							<i class="icon-Arrow_drop_down icon_10 icon_white ms-2"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="templete_layout_item_2">
+				<div class="top_container_menu_1 d-flex justify-content-between">
+					<div class="d-flex">
+						<div class="text_decoration_none d-flex align-items-center">
+							<div
+								class="d-flex align-items-center top_container_menu_list_1 top_container_menu_list_1_db"
+							>
+								<i class="icon-darhboard-Stroke icon_20 icon_black_1"></i>
+								<p>Dashboard</p>
+								<i class="icon-Arrow_drop_down icon_10 icon_black_1"></i>
+							</div>
+						</div>
+						<a
+							href="#"
+							class="text_decoration_none top_container_list_active d-flex align-items-center"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Status_list icon_20"></i>
+								<p>List</p>
+							</div>
+						</a>
+						<a
+							href="./board.html"
+							class="text_decoration_none d-flex align-items-center"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Trello-Stroke icon_20"></i>
+								<p>Board</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Bag_alt_light-Stroke icon_20"></i>
+								<p>Trace Baggage</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Chat_light icon_20"></i>
+								<p>Chat</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-File_dock_light-Stroke icon_20"></i>
+								<p>Documents</p>
+							</div>
+						</a>
+					</div>
+					<div class="d-flex align-items-center">
+						<i
+							class="icon-Kebab-2 icon_14 mr_5 cp d-none show_tablet"
+							data-bs-toggle="dropdown"
+							id="dropdown_tablet_header"
+						></i>
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_tablet_header"
+						>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Bag_alt_light-Stroke icon_20"></i>
+										<p>Trace Baggage</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Chat_light icon_20"></i>
+										<p>Chat</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-File_dock_light-Stroke icon_20"></i>
+										<p>Documents</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<img src="images/notification.svg" class="pr-2" alt="" />
+						<!-- <img src="images/setting.svg" class="" alt="" /> -->
+					</div>
+				</div>
+			</div>
+			<div class="templete_layout_item_3">
+				<div
+					class="top_container_menu_2 d-flex justify-content-between align-items-center"
+				>
+					<div class="chat_heading">#Chat</div>
+				</div>
+			</div>
+
+			<div class="templete_layout_item_4"></div>
+
+			<div class="templete_layout_item_5">
+				<div class="main_body_container">
+					<div class="main_body pb-4">
+						<div class="d-flex chat_body">
+							<div class="chat_name">DC</div>
+							<div class="chat_card">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex chat_card_item_1">
+										<h4>Deepankur Chawla</h4>
+										<label>commented</label>
+									</div>
+									<div class="chat_card_item_2">June 24, 2021 @ 5:35 pm</div>
+								</div>
+								<div class="d-flex chat_card_item_3">
+									<h4>@Punit</h4>
+									<label>
+										the baggage was not recieved at BLR Airport. Please check.
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex chat_body mt_10">
+							<div class="chat_name">DC</div>
+							<div class="chat_card">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex chat_card_item_1">
+										<h4>Deepankur Chawla</h4>
+										<label>commented</label>
+									</div>
+									<div class="chat_card_item_2">June 24, 2021 @ 5:35 pm</div>
+								</div>
+								<div class="d-flex chat_card_item_3">
+									<h4>@Punit</h4>
+									<label>
+										the baggage was not recieved at BLR Airport. Please check.
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex chat_body mt_10">
+							<div class="chat_name">DC</div>
+							<div class="chat_card">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex chat_card_item_1">
+										<h4>Deepankur Chawla</h4>
+										<label>commented</label>
+									</div>
+									<div class="chat_card_item_2">June 24, 2021 @ 5:35 pm</div>
+								</div>
+								<div class="d-flex chat_card_item_3">
+									<h4>@Punit</h4>
+									<label>
+										the baggage was not recieved at BLR Airport. Please check.
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="chat_body_reply">
+							<div class="d-flex chat_body">
+								<div class="chat_name">DC</div>
+								<div class="chat_card">
+									<div class="d-flex justify-content-between">
+										<div class="d-flex chat_card_item_1">
+											<h4>You</h4>
+											<label>commented</label>
+										</div>
+									</div>
+									<div class="d-flex chat_card_item_3">
+										<label>Can you please confirm? This is urgent.</label>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex chat_body mt_10">
+								<div class="chat_name">RS</div>
+								<div class="chat_card">
+									<div class="d-flex justify-content-between">
+										<div class="d-flex chat_card_item_1">
+											<h4>Rajan Singh</h4>
+											<label>commented</label>
+										</div>
+									</div>
+									<div class="d-flex chat_card_item_3">
+										<label>
+											We are still looking into it. Will keep you posted.
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="chat_footer_2 d-flex align-items-center mt-3">
+								<textarea
+									class="chat_footer_input"
+									cols="40"
+									rows="5"
+									placeholder="Comment / Chat ..."
+								></textarea>
+								<div class="ml_10 mr_10">
+									<i class="icon-Expand_right_double_light-Stroke icon_16"></i>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex chat_body mt_10">
+							<div class="chat_name">DC</div>
+							<div class="chat_card">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex chat_card_item_1">
+										<h4>Deepankur Chawla</h4>
+										<label>commented</label>
+									</div>
+									<div class="chat_card_item_2">June 24, 2021 @ 5:35 pm</div>
+								</div>
+								<div class="d-flex chat_card_item_3">
+									<h4>@Punit</h4>
+									<label>
+										the baggage was not recieved at BLR Airport. Please check.
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex chat_body mt_10">
+							<div class="chat_name">DC</div>
+							<div class="chat_card">
+								<div class="d-flex justify-content-between">
+									<div class="d-flex chat_card_item_1">
+										<h4>Deepankur Chawla</h4>
+										<label>commented</label>
+									</div>
+									<div class="chat_card_item_2">June 24, 2021 @ 5:35 pm</div>
+								</div>
+								<div class="d-flex chat_card_item_3">
+									<h4>@Punit</h4>
+									<label>
+										the baggage was not recieved at BLR Airport. Please check.
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="chat_footer d-flex align-items-center">
+							<textarea
+								class="chat_footer_input"
+								cols="40"
+								rows="5"
+								placeholder="Comment / Chat ..."
+							></textarea>
+							<div class="ml_10 mr_10">
+								<i class="icon-Expand_right_double_light-Stroke icon_16"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- custom js -->
+		<script src="js/bir.js"></script>
+	</body>
+</html>
