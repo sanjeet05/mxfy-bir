@@ -237,6 +237,7 @@ body {
 	list-style-type: none;
 	padding: 0px;
 	margin-top: 16px;
+	max-width: 200px;
 }
 .left_menu li {
 	text-align: center;

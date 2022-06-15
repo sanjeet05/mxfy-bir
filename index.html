@@ -51,10 +51,48 @@
 								</a>
 							</li>
 							<li class="">
-								<a href="/baggage_report.html" class="text_decoration_none d-flex">
-									<img src="images/reports.svg" alt="" />
-									<p>Reports</p>
+								<a
+									href="#reportSubMenu"
+									data-bs-toggle="collapse"
+									class="text_decoration_none d-flex align-items-center justify-content-between"
+								>
+									<div class="d-flex">
+										<img src="images/reports.svg" alt="" />
+										<p>Reports</p>
+									</div>
+									<i
+										class="icon-Arrow_drop_down icon_10 icon_white ms-2 pull-right"
+									></i>
 								</a>
+								<ul class="left_menu collapse" id="reportSubMenu">
+									<li>
+										<a
+											href="/baggage_report.html"
+											class="text_decoration_none d-flex"
+										>
+											<img src="images/dashboard.svg" alt="" />
+											<p>Missing</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/reports.svg" alt="" />
+											<p>Damaged</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/trace_baggage.svg" alt="" />
+											<p>Pilferege</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<img src="images/trace_baggage.svg" alt="" />
+											<p>Unclaimed/Hold</p>
+										</a>
+									</li>
+								</ul>
 							</li>
 							<li class="">
 								<a href="#" class="text_decoration_none d-flex">
@@ -1322,7 +1360,7 @@
 												<textarea
 													rows="2"
 													class="modal_input_textarea"
-													placeholder="256, 10th Cross, 1st Main,"													
+													placeholder="256, 10th Cross, 1st Main,"
 												></textarea>
 											</div>
 											<div class="col-6">
@@ -1331,7 +1369,6 @@
 													rows="2"
 													class="modal_input_textarea"
 													placeholder="Whitefield, Near Assam Bhavan"
-													
 												></textarea>
 											</div>
 										</div>
