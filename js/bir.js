@@ -43,6 +43,11 @@ function toggleLeftSidebar(event) {
 	if (templeteLayout.length != 0) {
 		templeteLayout[0].classList.toggle("templete_layout_left_collapse");
 	}
+	document.getElementById("reportDropDown")?.classList.toggle("d-none");
+	document.getElementById("reportDropDownItem1")?.classList.toggle("d-none");
+	document.getElementById("reportDropDownItem2")?.classList.toggle("d-none");
+	document.getElementById("reportDropDownItem3")?.classList.toggle("d-none");
+	document.getElementById("reportDropDownItem4")?.classList.toggle("d-none");
 }
 
 // on click of left panel close double arrow
