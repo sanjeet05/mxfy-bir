@@ -25,6 +25,19 @@ body {
 /* reset bootstrap end */
 
 /* common css - start */
+.mt_0 {
+	margin-top: 0px !important;
+}
+.mb_0 {
+	margin-bottom: 0px !important;
+}
+.ml_0 {
+	margin-left: 0px !important;
+}
+.mr_0 {
+	margin-right: 0px !important;
+}
+
 .mt_5 {
 	margin-top: 5px !important;
 }
@@ -2176,6 +2189,49 @@ body {
 .trace_bag_right_card {
 	border: 1px solid #d1d1d1;
 	border-radius: 8px;
+}
+.trace_bag_right_card_sp {
+	padding: 8px 16px;
+}
+.trace_bag_right_card_sp_2 {
+	border-top: 1px solid #bababa;
+	padding: 0px 16px;
+	margin-top: 5px;
+}
+.trace_bag_right_card_item_2 {
+	width: 200px;
+	margin-top: 6px;
+} 
+.trace_bag_text_1 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+}
+.trace_bag_text_2 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	margin: 0px;
+}
+.trace_bag_text_3 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+}
+.trace_bag_body_card {
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	padding: 16px;
 }
 
 /* for tablet - start */
