@@ -51,15 +51,22 @@
 			<section class="report_layout_item_3 report_body">
 				<div class="report_body_left">
 					<div
-						class="d-flex align-items-center db_tab_heading"
+						class="d-flex align-items-center db_tab_heading justify-content-between"
 						id="modal_tab_1"
 					>
-						<i
-							class="icon-Expand_right_light-Stroke db_tab_heading_icon"
-							onclick="activeModalDashboardTab(1)"
-						></i>
-						<div class="d-flex align-items-center justify-content-between">
-							<div class="modal_sub_heading_up">Passenger Details</div>
+						<div class="d-flex align-items-center">
+							<i
+								class="icon-Expand_right_light-Stroke db_tab_heading_icon"
+								onclick="activeModalDashboardTab(1)"
+							></i>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="modal_sub_heading_up">Passenger Details</div>
+							</div>
+						</div>
+						<div class="d-flex">
+							<i class="icon-Edit_light-Stroke icon_14"></i>
+							<i class="icon-Refresh_2_light-Stroke icon_14 ml_10"></i>
+							<i class="icon-Save_light icon_14 ml_10"></i>
 						</div>
 					</div>
 					<div id="modal_tab_1_data" class="ps-3">
@@ -2066,6 +2073,13 @@
 							data-bs-dismiss="modal"
 						>
 							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_reset_btn"
+							data-bs-dismiss="modal"
+						>
+							Submit & Print
 						</button>
 						<button
 							type="button"
