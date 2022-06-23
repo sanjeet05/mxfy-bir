@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="lib/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+		/>
+
+		<!-- fonts -->
+		<link href="lib/fonts.css" rel="stylesheet" />
+
+		<!-- icons -->
+		<link rel="stylesheet" href="lib/icomoon_v2/style.css" />
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/bir.css" />
+
+		<title>Maxify Digital - BIR</title>
+	</head>
+	<body onload="dashboardInit()">
+		<div class="templete_layout">
+			<!-- left panel -->
+			<div class="templete_layout_item_1 templete_layout_item_left">
+				<div class="d-flex flex-column w-100 h-100">
+					<div class="d-flex justify-content-center left_panel_top">
+						<img src="images/logo_v1.png" class="logo logo_big" alt="" />
+						<img
+							src="images/logo_v1_small.png"
+							class="logo logo_small"
+							alt=""
+						/>
+						<i
+							class="icon-Expand_left_double_light-Stroke icon_white logo_left_arrow"
+							onclick="toggleLeftSidebar(event)"
+						></i>
+					</div>
+					<div class="d-flex justify-content-start">
+						<ul class="left_menu">
+							<li class="active_menu">
+								<a href="./" class="text_decoration_none d-flex">
+									<i class="icon-darhboard-Stroke icon_18 icon_white"></i>
+									<p>Dashboard</p>
+								</a>
+							</li>
+							<li class="" id="reportDropDown">
+								<a
+									href="#reportSubMenu"
+									data-bs-toggle="collapse"
+									class="text_decoration_none d-flex align-items-center justify-content-between"
+								>
+									<div class="d-flex">
+										<i
+											class="icon-Chart_alt_light-Stroke icon_18 icon_white"
+										></i>
+										<p>Reports</p>
+									</div>
+									<i
+										class="icon-Arrow_drop_down icon_10 icon_white ms-2 pull-right"
+									></i>
+								</a>
+								<ul class="left_menu collapse" id="reportSubMenu">
+									<li>
+										<a
+											href="./baggage_report.html"
+											class="text_decoration_none d-flex"
+										>
+											<i class="icon-Bag-Missing icon_18 icon_white"></i>
+											<p>Missing</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<i class="icon-Bag_light-Stroke icon_18 icon_white"></i>
+											<p>Damaged</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<i class="icon-Desk_light icon_18 icon_white"></i>
+											<p>Pilferege</p>
+										</a>
+									</li>
+									<li class="">
+										<a href="#" class="text_decoration_none d-flex">
+											<i class="icon-Bag-Stroke icon_18 icon_white"></i>
+											<p>Unclaimed/Hold</p>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="d-none" id="reportDropDownItem1">
+								<a
+									href="./baggage_report.html"
+									class="text_decoration_none d-flex"
+								>
+									<i class="icon-Bag-Missing icon_18 icon_white"></i>
+									<p>Missing</p>
+								</a>
+							</li>
+							<li class="d-none" id="reportDropDownItem2">
+								<a href="#" class="text_decoration_none d-flex">
+									<i class="icon-Bag_light-Stroke icon_18 icon_white"></i>
+									<p>Damaged</p>
+								</a>
+							</li>
+							<li class="d-none" id="reportDropDownItem3">
+								<a href="#" class="text_decoration_none d-flex">
+									<i class="icon-Desk_light icon_18 icon_white"></i>
+									<p>Pilferege</p>
+								</a>
+							</li>
+							<li class="d-none" id="reportDropDownItem4">
+								<a href="#" class="text_decoration_none d-flex">
+									<i class="icon-Bag-Stroke icon_18 icon_white"></i>
+									<p>Unclaimed/Hold</p>
+								</a>
+							</li>
+
+							<li class="">
+								<a href="#" class="text_decoration_none d-flex">
+									<i class="icon-Bag_alt_light-Stroke icon_18 icon_white"></i>
+									<p>Trace Baggage</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d-flex align-items-end h-100">
+						<div class="left_bottom d-flex align-items-center">
+							<div class="left_bottom_name_initials">DC</div>
+							<div class="left_bottom_name">Deepankur Chawla</div>
+							<i class="icon-Arrow_drop_down icon_10 icon_white ms-2"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="templete_layout_item_2">
+				<div class="top_container_menu_1 d-flex justify-content-between">
+					<div class="d-flex">
+						<div class="text_decoration_none d-flex align-items-center">
+							<div
+								class="d-flex align-items-center top_container_menu_list_1 top_container_menu_list_1_db"
+							>
+								<i class="icon-darhboard-Stroke icon_20 icon_black_1"></i>
+								<p>Dashboard</p>
+								<i class="icon-Arrow_drop_down icon_10 icon_black_1"></i>
+							</div>
+						</div>
+						<a
+							href="./index.html"
+							class="text_decoration_none d-flex align-items-center"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Status_list icon_20"></i>
+								<p>List</p>
+							</div>
+						</a>
+						<a
+							href="./board.html"
+							class="text_decoration_none d-flex align-items-center"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Trello-Stroke icon_20"></i>
+								<p>Board</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Bag_alt_light-Stroke icon_20"></i>
+								<p>Trace Baggage</p>
+							</div>
+						</a>
+						<a
+							href="./chat.html"
+							class="text_decoration_none d-flex align-items-center hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-Chat_light icon_20"></i>
+								<p>Chat</p>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="text_decoration_none d-flex align-items-center top_container_list_active hide_tablet"
+						>
+							<div class="d-flex align-items-center top_container_menu_list_1">
+								<i class="icon-File_dock_light-Stroke icon_20"></i>
+								<p>Documents</p>
+							</div>
+						</a>
+					</div>
+					<div class="d-flex align-items-center">
+						<i
+							class="icon-Kebab-2 icon_14 mr_5 cp d-none show_tablet"
+							data-bs-toggle="dropdown"
+							id="dropdown_tablet_header"
+						></i>
+						<ul
+							class="dropdown-menu group_menu"
+							aria-labelledby="dropdown_tablet_header"
+						>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Bag_alt_light-Stroke icon_20"></i>
+										<p>Trace Baggage</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-Chat_light icon_20"></i>
+										<p>Chat</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text_decoration_none dropdown-item d-flex align-items-center"
+								>
+									<div class="d-flex align-items-center">
+										<i class="icon-File_dock_light-Stroke icon_20"></i>
+										<p>Documents</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<img src="images/notification.svg" class="pr-2" alt="" />
+						<!-- <img src="images/setting.svg" class="" alt="" /> -->
+					</div>
+				</div>
+			</div>
+			<div class="templete_layout_item_3"></div>
+
+			<div class="templete_layout_item_4"></div>
+
+			<div class="templete_layout_item_5">
+				<div class="main_body_container pt_0">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 pt-3">
+								<div class="d-flex align-items-center">
+									<h5 class="doc_heading">Deepankur’s Documents</h5>
+									<i class="icon-Search_alt_light-Stroke icon_14 ms-4"></i>
+								</div>
+								<div class="d-flex align-items-center mt_10">
+									<i class="icon-Arrow_drop_down icon_12"></i>
+									<i class="icon-File_dock_light-Stroke icon_14 pl_5"></i>
+									<label class="doc_left_item_1 pl_5">Pending Reply List</label>
+								</div>
+								<div
+									class="d-flex align-items-center mt_10 doc_left_item_2 doc_left_item_active"
+								>
+									<i class="icon-File_dock_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">DEL-IXG</label>
+								</div>
+								<div class="d-flex align-items-center mt_10 doc_left_item_2">
+									<i class="icon-File_dock_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">DEL-IXG</label>
+								</div>
+								<div class="d-flex align-items-center mt_10 doc_left_item_2">
+									<i class="icon-File_dock_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">DEL-IXG</label>
+								</div>
+								<div class="d-flex align-items-center mt_10 doc_left_item_2">
+									<i class="icon-File_dock_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">DEL-IXG</label>
+								</div>
+								<div class="d-flex align-items-center mt_10">
+									<i class="icon-Arrow_drop_down icon_12"></i>
+									<i class="icon-File_dock_light-Stroke icon_14 pl_5"></i>
+									<label class="doc_left_item_1 pl_5">Escalations</label>
+								</div>
+								<div class="d-flex align-items-center mt_10 doc_left_item_2">
+									<i class="icon-File_dock_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">Jan, 2021</label>
+								</div>
+								<div class="d-flex align-items-center mt_10 doc_left_item_2">
+									<i class="icon-Add_square_light-Stroke icon_14"></i>
+									<label class="doc_left_item_1 pl_5">Add Document</label>
+								</div>
+							</div>
+							<div class="col-9 pt-3 doc_right_body">
+								<h5>DEL-IXG</h5>
+								<p>4140 Parker Rd. Allentown, New Mexico 31134</p>
+								<p>
+									Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+									Sunt qui esse pariatur duis deserunt mollit dolore cillum
+									minim tempor enim. Elit aute irure tempor cupidatat incididunt
+									sint deserunt ut voluptate aute id deserunt nisi.
+								</p>
+								<p>
+									Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+									Sunt qui esse pariatur duis deserunt mollit dolore cillum
+									minim tempor enim. Elit aute irure tempor cupidatat incididunt
+									sint deserunt ut voluptate aute id deserunt nisi.
+								</p>
+								<p>
+									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+									amet sint. Velit officia consequat duis enim velit mollit.
+									Exercitation veniam consequat sunt nostrud amet. Amet minim
+									mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+									Velit officia consequat duis enim velit mollit. Exercitation
+									veniam consequat sunt nostrud amet.Amet minim mollit non
+									deserunt ullamco est sit aliqua dolor do amet sint. Velit
+									officia consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.Amet minim mollit non deserunt
+									ullamco est sit aliqua dolor do amet sint. Velit officia
+									consequat duis enim velit mollit. Exercitation veniam
+									consequat sunt nostrud amet.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- custom js -->
+		<script src="js/bir.js"></script>
+	</body>
+</html>

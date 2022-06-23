@@ -57,6 +57,12 @@ body {
 .pr_0 {
 	padding-right: 0px !important;
 }
+.pt_0 {
+	padding-top: 0px !important;
+}
+.pb_0 {
+	padding-bottom: 0px !important;
+}
 
 .pl_5 {
 	padding-left: 5px !important;
@@ -2380,6 +2386,55 @@ body {
 	color: #242e41;
 }
 .trace_bag_modal_text_3 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+}
+
+.doc_heading {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #242e41;
+	margin: 0px;
+}
+.doc_left_item_1 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #6d7480;
+	cursor: pointer;
+}
+.doc_left_item_active label {
+	color: #083e60;
+}
+.doc_left_item_active i::before {
+	color: #083e60;
+}
+.doc_left_item_2 {
+	margin-left: 17px;
+}
+.doc_right_body {
+	background: #ffffff;
+	height: 90vh;
+	padding-left: 20px;
+}
+.doc_right_body h5 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	color: #242e41;
+}
+.doc_right_body p {
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 400;
