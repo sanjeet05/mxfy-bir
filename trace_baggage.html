@@ -439,6 +439,8 @@
 												<button
 													type="button"
 													class="btn reset_btn trace_bag_view_btn"
+													data-bs-target="#viewReport"
+													data-bs-toggle="modal"
 												>
 													<i class="icon-Eye_light icon_14 icon_white"></i>
 													View
@@ -793,6 +795,103 @@
 								Submit
 							</button>
 						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="viewReport" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header pt_10">
+						<div
+							class="d-flex w-100 justify-content-between modal_heading align-items-center"
+						>
+							<h5 class="modal-title">Match Report</h5>
+							<div class="trace_bag_modal_match">
+								<label>81%</label>
+								<p>MATCH</p>
+							</div>
+						</div>
+						<button
+							type="button"
+							class="btn-close icon_14"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body modal_body_2">
+						<div class="modal_body trace_bag_modal_body">
+							<div class="row">
+								<div class="col-4">
+									<label class="trace_bag_modal_text_1"
+										>MATCHING PROPERTIES</label
+									>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_1">AHL</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_1">OHD</label>
+								</div>
+							</div>
+							<div class="row mt_10">
+								<div class="col-4">
+									<label class="trace_bag_modal_text_2">Number</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_3">DELG82100021M</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_3">BOMMX2100016U</label>
+								</div>
+							</div>
+							<div class="row mt_10">
+								<div class="col-4">
+									<label class="trace_bag_modal_text_2">Bag Tag Number</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_3">DELG82100021M</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_3">BOMMX2100016U</label>
+								</div>
+							</div>
+							<div class="row mt_10">
+								<div class="col-4">
+									<label class="trace_bag_modal_text_2">Routing</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_2">DELG82100021M</label>
+								</div>
+								<div class="col-4">
+									<label class="trace_bag_modal_text_3">BOMMX2100016U</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn reset_btn modal_cancel_btn"
+							data-bs-dismiss="modal"
+						>
+							Cancel
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_reset_btn mr_10"
+							data-bs-dismiss="modal"
+						>
+							Discard
+						</button>
+						<button
+							type="button"
+							class="btn reset_btn modal_save_btn"
+							data-bs-dismiss="modal"
+						>
+							Match Report
+						</button>
 					</div>
 				</div>
 			</div>
