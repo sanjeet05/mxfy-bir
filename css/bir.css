@@ -2201,7 +2201,7 @@ body {
 .trace_bag_right_card_item_2 {
 	width: 200px;
 	margin-top: 6px;
-} 
+}
 .trace_bag_text_1 {
 	font-family: "Raleway";
 	font-style: normal;
@@ -2232,6 +2232,98 @@ body {
 	border: 1px solid #d1d1d1;
 	border-radius: 8px;
 	padding: 16px;
+	box-sizing: border-box;
+	height: 46vh;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+.trace_bag_body_card::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.trace_bag_list {
+	background: #ffffff;
+	box-shadow: 0px 4px 8px rgba(7, 9, 13, 0.08);
+	border-radius: 4px;
+	padding: 8px 16px 14px 16px;
+}
+.trace_bag_list_right_border {
+	border-right: 1px solid #d1d1d1;
+}
+.trace_bag_list_item_1 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #6d7480;
+	margin: 0px;
+}
+.trace_bag_list_item_2 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #242e41;
+	margin: 0px;
+}
+.trace_bag_list_item_3 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #047857;
+}
+.trace_bag_list_item_3_clr_1 {
+	color: #c27a08;
+}
+.trace_bag_list_item_3_clr_2 {
+	color: #b22d32;
+}
+
+.trace_bag_view_btn {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	color: #ffffff;
+	letter-spacing: 0.02em;
+	background: #242e41;
+	border-radius: 8px;
+	padding: 4px 8px;
+}
+.trace_bag_view_btn:hover {
+	background: #242e41;
+	color: #ffffff;
+}
+.trace_bag_view_btn i {
+	vertical-align: middle;
+}
+
+.trace_bag_discard_btn {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 16px;
+	color: #242e41;
+	letter-spacing: 0.02em;
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 4px 8px;
+}
+.trace_bag_discard_btn:hover {
+	background: #ffffff;
+	color: #242e41;
+}
+.trace_bag_discard_btn i {
+	vertical-align: middle;
 }
 
 /* for tablet - start */
