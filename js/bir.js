@@ -214,3 +214,7 @@ function activeModalBagTab(tabNumber) {
 		document.getElementById("modal_bag_tab_3_data").classList.toggle("d-none");
 	}
 }
+
+function toggleBagTraceFilter() {
+	document.getElementById("bagTraceRightSideFilter")?.classList.toggle("d-none");
+}

@@ -1387,6 +1387,18 @@ body {
 	padding-left: 20px;
 }
 
+.modal_icon_input_2 {
+	position: relative;
+}
+.modal_icon_input_2 i {
+	position: absolute;
+	left: 4px;
+	top: 30px;
+}
+.modal_icon_input_2 input {
+	padding-left: 20px;
+}
+
 .modal_input_disabled {
 	background: #e3e3e3;
 	border-radius: 4px 4px 0px 0px;
@@ -2151,6 +2163,11 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	color: #35abd9;
+	cursor: pointer;
+}
+.trace_bag_back_icon::before {
+	color: #35abd9;
+	cursor: pointer;
 }
 
 .trace_bag_left_card {
@@ -2158,6 +2175,7 @@ body {
 	border: 1px solid #d1d1d1;
 	border-radius: 8px;
 	padding: 16px;
+	overflow: hidden;
 }
 
 .trace_bag_image {
@@ -2254,6 +2272,22 @@ body {
 
 .trace_bag_body_card::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
+}
+.trace_bag_heading_1 div {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242e41;
+}
+.trace_bag_heading_2 h5 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #6d7480;
 }
 
 .trace_bag_list {
@@ -2392,6 +2426,35 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	color: #242e41;
+}
+.trace_bag_filter_body {
+	width: 250px;
+	background: #ffffff;
+	margin-right: -15px;
+	margin-top: -15px;
+	position: relative;
+}
+.trace_bag_filter_heading {
+	border-bottom: 1px solid #d1d1d1;
+	padding: 10px;
+}
+.trace_bag_filter_heading h5 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242e41;
+	margin: 0px;
+	padding-left: 5px;
+}
+.trace_bag_filter_footer {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	border-top: 1px solid #d1d1d1;
 }
 
 .doc_heading {
